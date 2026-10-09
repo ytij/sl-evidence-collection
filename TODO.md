@@ -26,9 +26,9 @@ So P1 (preserve) and P2 (register) are co-#1: one protects the evidence, the oth
 
 ## P1 — Freeze & authenticate evidence  *(do first)*
 - [x] Raw API/table snapshots + hash manifest (`evidence/`).
-- [ ] **RFC 3161 trusted timestamp** of the evidence manifest (`timestamp.py`) → `evidence/timestamps/`.
-- [ ] Full **page capture** (HTML + screenshot + PDF) per live URL via headless browser (`capture.py`) — pending install of Playwright.
-- [ ] Independent archival: submit each live URL to **archive.today** / Wayback for third-party corroboration.
+- [x] **RFC 3161 trusted timestamp** of the evidence manifest (`timestamp.py`) → `evidence/timestamps/` (FreeTSA).
+- [ ] Full **page capture** (HTML + screenshot + PDF) per live URL (`capture.py`) — needs `pip install playwright && playwright install chromium`.
+- [x] Independent archival: `archive.py` submitted the 12 works to the **Wayback Machine** (8/12 snapshotted; 4 retryable) → `captures/archive.json`.
 - [ ] Capture the **monetization** surface (ExoClick zones, Bitcoin, supporter paywall) as served on-page.
 - [ ] Preserve the **delisted** works' thumbnails (610) + `video_meta` rows (already snapshotted) as proof they existed.
 
