@@ -1,0 +1,487 @@
+{
+  "generated_at": "2026-10-09T00:00:00Z",
+  "verified_at": "2026-10-09",
+  "verification_method": "Primary text fetched this session from law.cornell.edu (U.S. Code, FRE) and leg.state.fl.us (Florida Statutes); the Supreme Court case was confirmed via courtlistener.com. Authorities marked verified=true were opened and read; verified=false entries are standard citations recorded for counsel to confirm and are flagged as such.",
+  "authoritative_domains": [
+    "law.cornell.edu",
+    "leg.state.fl.us",
+    "courtlistener.com",
+    "supremecourt.gov",
+    "uscourts.gov",
+    "copyright.gov",
+    "govinfo.gov"
+  ],
+  "authorities": [
+    {
+      "id": "USC17-411",
+      "type": "statute",
+      "citation": "17 U.S.C. § 411(a)",
+      "title": "Registration and civil infringement actions",
+      "source_url": "https://www.law.cornell.edu/uscode/text/17/411",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "For a 'United States work', no civil action for infringement may be instituted until preregistration or registration of the claim (or refusal of registration). Non-U.S. works are exempt from the registration-to-sue requirement but not from § 412.",
+      "applies_to": ["E4", "E17"]
+    },
+    {
+      "id": "USC17-412",
+      "type": "statute",
+      "citation": "17 U.S.C. § 412",
+      "title": "Registration as prerequisite to certain remedies for infringement",
+      "source_url": "https://www.law.cornell.edu/uscode/text/17/412",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "No statutory damages or attorney's fees under §§ 504–505 unless registration precedes infringement, or (for published works) registration is made within three months after first publication.",
+      "applies_to": ["E5", "E10", "E11"]
+    },
+    {
+      "id": "USC17-501",
+      "type": "statute",
+      "citation": "17 U.S.C. § 501",
+      "title": "Infringement of copyright",
+      "source_url": "https://www.law.cornell.edu/uscode/text/17/501",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "Anyone who violates any exclusive right under § 106 is an infringer; the legal or beneficial owner of an exclusive right may sue subject to § 411.",
+      "applies_to": ["E6", "E17"]
+    },
+    {
+      "id": "USC17-504",
+      "type": "statute",
+      "citation": "17 U.S.C. § 504(b), (c)",
+      "title": "Remedies: damages and profits",
+      "source_url": "https://www.law.cornell.edu/uscode/text/17/504",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "Actual damages + infringer's profits (§ 504(b)); or statutory damages of $750–$30,000 per work, up to $150,000 for willful infringement (§ 504(c)). § 504(c)(3) creates a rebuttable presumption of willfulness where materially false contact information was provided to a domain registrar.",
+      "applies_to": ["E10", "E19"]
+    },
+    {
+      "id": "USC17-505",
+      "type": "statute",
+      "citation": "17 U.S.C. § 505",
+      "title": "Remedies: costs and attorney's fees",
+      "source_url": "https://www.law.cornell.edu/uscode/text/17/505",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "The court may award full costs and a reasonable attorney's fee to the prevailing party, subject to § 412 timing.",
+      "applies_to": ["E11"]
+    },
+    {
+      "id": "USC17-512",
+      "type": "statute",
+      "citation": "17 U.S.C. § 512(c)(3), (d), (f), (h)",
+      "title": "Limitations on liability relating to material online",
+      "source_url": "https://www.law.cornell.edu/uscode/text/17/512",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "§ 512(c)(3) lists the six elements a takedown notice must substantially contain; § 512(d) covers information-location tools; § 512(f) imposes liability for knowing misrepresentation; § 512(h) authorizes a subpoena to identify an infringer, issued by the clerk on a § 512(c)(3) notification, a proposed subpoena, and a sworn declaration.",
+      "applies_to": ["E7", "E8", "E9"]
+    },
+    {
+      "id": "USC28-1338",
+      "type": "statute",
+      "citation": "28 U.S.C. § 1338(a)",
+      "title": "Patents, plant variety protection, copyrights, mask works, designs, trademarks, and unfair competition",
+      "source_url": "https://www.law.cornell.edu/uscode/text/28/1338",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "United States district courts have exclusive original jurisdiction over civil actions arising under the copyright Act.",
+      "applies_to": ["E16"]
+    },
+    {
+      "id": "USC28-1400",
+      "type": "statute",
+      "citation": "28 U.S.C. § 1400(a)",
+      "title": "Patents and copyrights, mask works, and designs",
+      "source_url": "https://www.law.cornell.edu/uscode/text/28/1400",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "A copyright action may be instituted in the district in which the defendant or the defendant's agent resides or may be found.",
+      "applies_to": ["E15"]
+    },
+    {
+      "id": "USC28-1746",
+      "type": "statute",
+      "citation": "28 U.S.C. § 1746",
+      "title": "Unsworn declarations under penalty of perjury",
+      "source_url": "https://www.law.cornell.edu/uscode/text/28/1746",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "A matter otherwise required to be supported by a sworn affidavit may be supported by an unsworn declaration subscribed as true under penalty of perjury and dated in the statutory form.",
+      "applies_to": ["E18", "E1"]
+    },
+    {
+      "id": "FRE-901",
+      "type": "rule",
+      "citation": "Fed. R. Evid. 901",
+      "title": "Authenticating or identifying evidence",
+      "source_url": "https://www.law.cornell.edu/rules/fre/rule_901",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "The proponent must produce evidence sufficient to support a finding that the item is what it is claimed to be; examples include testimony of a witness with knowledge, Rule 901(b)(1), and evidence about a process or system producing an accurate result, Rule 901(b)(9).",
+      "applies_to": ["E1", "E2"]
+    },
+    {
+      "id": "FRE-902",
+      "type": "rule",
+      "citation": "Fed. R. Evid. 902(13), (14)",
+      "title": "Evidence that is self-authenticating",
+      "source_url": "https://www.law.cornell.edu/rules/fre/rule_902",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "Rule 902(13) allows self-authentication of records generated by an electronic process/system by a qualified person's certification; Rule 902(14) allows self-authentication of data copied from a device/medium/file by a process of digital identification (hash), certified by a qualified person.",
+      "applies_to": ["E1", "E2"]
+    },
+    {
+      "id": "FL-48.193",
+      "type": "state-statute",
+      "citation": "Fla. Stat. § 48.193(1)(a)2, (2)",
+      "title": "Acts subjecting person to jurisdiction of courts of state",
+      "source_url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0000-0099/0048/Sections/0048.193.html",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "Florida's long-arm statute reaches a person committing a tortious act within the state (§ 48.193(1)(a)2) and any defendant engaged in substantial and not isolated activity within the state (§ 48.193(2)), subject to due-process limits.",
+      "applies_to": ["E14"]
+    },
+    {
+      "id": "CASE-fourth-estate",
+      "type": "case",
+      "citation": "Fourth Estate Pub. Benefit Corp. v. Wall-Street.com, LLC, 586 U.S. 296 (2019)",
+      "title": "Registration is 'made' only when the Copyright Office acts on the application",
+      "source_url": "https://www.courtlistener.com/?q=%22Fourth+Estate%22+%22Wall-Street.com%22&type=o",
+      "verified": true,
+      "verified_at": "2026-10-09",
+      "requirement": "For purposes of § 411(a), registration occurs when the Register of Copyrights registers (or refuses) the claim, not merely when the application is filed.",
+      "applies_to": ["E4"]
+    },
+    {
+      "id": "USC17-410",
+      "type": "statute",
+      "citation": "17 U.S.C. § 410(c)",
+      "title": "Registration of claim and issuance of certificate",
+      "source_url": "https://www.law.cornell.edu/uscode/text/17/410",
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation; primary text not re-fetched this session. Counsel to confirm.",
+      "requirement": "A certificate of registration made before or within five years after first publication is prima facie evidence of the validity of the copyright and the facts stated in the certificate.",
+      "applies_to": ["E3", "E5"]
+    },
+    {
+      "id": "USC17-101",
+      "type": "statute",
+      "citation": "17 U.S.C. § 101 (definition of 'United States work')",
+      "title": "Definitions",
+      "source_url": "https://www.law.cornell.edu/uscode/text/17/101",
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation; primary text not re-fetched this session. Counsel to confirm.",
+      "requirement": "Defines 'United States work' by reference to first publication (and related nationality/residence tests), which determines whether § 411(a)'s registration-to-sue requirement applies.",
+      "applies_to": ["E17"]
+    },
+    {
+      "id": "USC17-104",
+      "type": "statute",
+      "citation": "17 U.S.C. § 104",
+      "title": "Subject matter of copyright: National origin",
+      "source_url": "https://www.law.cornell.edu/uscode/text/17/104",
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation; primary text not re-fetched this session. Counsel to confirm.",
+      "requirement": "Extends protection to works of foreign nationals under Berne and related treaties; foreign authors may enforce U.S. copyrights.",
+      "applies_to": ["E17"]
+    },
+    {
+      "id": "USC17-106",
+      "type": "statute",
+      "citation": "17 U.S.C. § 106(1), (4), (5)",
+      "title": "Exclusive rights in copyrighted works",
+      "source_url": "https://www.law.cornell.edu/uscode/text/17/106",
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation; primary text not re-fetched this session. Counsel to confirm.",
+      "requirement": "Exclusive rights of reproduction, distribution, and public performance/display — the rights infringed by unauthorized rehosting.",
+      "applies_to": ["E6"]
+    },
+    {
+      "id": "FRCP-45",
+      "type": "rule",
+      "citation": "Fed. R. Civ. P. 45",
+      "title": "Subpoena",
+      "source_url": "https://www.law.cornell.edu/rules/frcp/rule_45",
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation; primary text not re-fetched this session. Counsel to confirm.",
+      "requirement": "Governs third-party subpoenas in federal litigation (documents, deposition, inspection); § 512(h) and Rule 45 are the mechanisms to identify the infringer.",
+      "applies_to": ["E8"]
+    },
+    {
+      "id": "FRCP-65",
+      "type": "rule",
+      "citation": "Fed. R. Civ. P. 65",
+      "title": "Injunctions and restraining orders",
+      "source_url": "https://www.law.cornell.edu/rules/frcp/rule_65",
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation; primary text not re-fetched this session. Counsel to confirm.",
+      "requirement": "Governs temporary restraining orders and preliminary injunctions to restrain ongoing infringement.",
+      "applies_to": ["E12"]
+    },
+    {
+      "id": "FRCP-37",
+      "type": "rule",
+      "citation": "Fed. R. Civ. P. 37(e)",
+      "title": "Failure to make disclosures or to cooperate in discovery",
+      "source_url": "https://www.law.cornell.edu/rules/frcp/rule_37",
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation; primary text not re-fetched this session. Counsel to confirm.",
+      "requirement": "Addresses sanctions for failure to preserve electronically stored information; supports the need for documented preservation of the rehosted copies.",
+      "applies_to": ["E13"]
+    },
+    {
+      "id": "CASE-lorraine",
+      "type": "case",
+      "citation": "Lorraine v. Markel Am. Ins. Co., 241 F.R.D. 534 (D. Md. 2007)",
+      "title": "Authentication of electronically stored information",
+      "source_url": null,
+      "verified": false,
+      "verified_at": null,
+      "note": "Landmark ESI-authentication opinion; citation standard. Counsel to confirm.",
+      "requirement": "Sets out the authentication/relevance/hearsay/best-evidence analysis for electronic evidence, including web pages and digital records.",
+      "applies_to": ["E1", "E2"]
+    },
+    {
+      "id": "CASE-bansal",
+      "type": "case",
+      "citation": "United States v. Bansal, 663 F.3d 634 (3d Cir. 2011)",
+      "title": "Authentication of web page printouts",
+      "source_url": null,
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation. Counsel to confirm.",
+      "requirement": "Web-page printouts may be authenticated by distinctive characteristics and circumstantial evidence under Rule 901(b)(4).",
+      "applies_to": ["E2"]
+    },
+    {
+      "id": "CASE-mitchell",
+      "type": "case",
+      "citation": "Mitchell Bros. Film Grp. v. Cinema Adult Theater, 604 F.2d 852 (5th Cir. 1979)",
+      "title": "Obscene works are copyrightable",
+      "source_url": null,
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation. Counsel to confirm. (See also Jartech, Inc. v. Clancy, 666 F.2d 403 (9th Cir. 1982).)",
+      "requirement": "Content's adult/obscene nature is not a defense to copyright infringement; obscenity does not defeat copyrightability.",
+      "applies_to": ["E3"]
+    },
+    {
+      "id": "CASE-calder",
+      "type": "case",
+      "citation": "Calder v. Jones, 465 U.S. 783 (1984)",
+      "title": "Personal jurisdiction from intentional conduct aimed at the forum",
+      "source_url": null,
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation. Counsel to confirm.",
+      "requirement": "Intentional, forum-targeted conduct can support personal jurisdiction (effects test).",
+      "applies_to": ["E14"]
+    },
+    {
+      "id": "CASE-walden",
+      "type": "case",
+      "citation": "Walden v. Fiore, 571 U.S. 277 (2014)",
+      "title": "Minimum contacts must arise from the defendant's own contacts with the forum",
+      "source_url": null,
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation. Counsel to confirm.",
+      "requirement": "Limits personal jurisdiction; the defendant's own contacts with the forum state must be the basis, not merely the plaintiff's residence.",
+      "applies_to": ["E14"]
+    },
+    {
+      "id": "CASE-zubulake",
+      "type": "case",
+      "citation": "Zubulake v. UBS Warburg LLC, 220 F.R.D. 212 (S.D.N.Y. 2003)",
+      "title": "Duty to preserve relevant evidence",
+      "source_url": null,
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation (the Zubulake line). Counsel to confirm.",
+      "requirement": "Once litigation is reasonably anticipated, a party must preserve relevant evidence; informs our preservation obligations and posture.",
+      "applies_to": ["E13"]
+    },
+    {
+      "id": "CASE-feist",
+      "type": "case",
+      "citation": "Feist Publ'ns, Inc. v. Rural Tel. Serv. Co., 499 U.S. 340 (1991)",
+      "title": "Originality requirement",
+      "source_url": null,
+      "verified": false,
+      "verified_at": null,
+      "note": "Standard citation. Counsel to confirm.",
+      "requirement": "Copyright requires a modicum of originality; supports the authorship/ownership showing for the works.",
+      "applies_to": ["E3"]
+    }
+  ],
+  "documentation_elements": [
+    {
+      "id": "E1",
+      "title": "Chain of custody / integrity of collected data",
+      "authority_ids": ["FRE-901", "FRE-902", "USC28-1746", "CASE-lorraine"],
+      "repo_artifacts": [
+        "evidence/manifest.json",
+        "evidence/timestamps/index.json",
+        "evidence_store.py",
+        "captures/20261009T050349Z/manifest.json"
+      ],
+      "status": "partial",
+      "gap": "No signed custodian declaration under 28 U.S.C. § 1746 / FRE 902(13)-(14) yet."
+    },
+    {
+      "id": "E2",
+      "title": "Authentication of web captures / screenshots",
+      "authority_ids": ["FRE-901", "FRE-902", "CASE-bansal", "CASE-lorraine"],
+      "repo_artifacts": ["capture.py", "captures/20261009T050349Z/manifest.json"],
+      "status": "partial",
+      "gap": "Captures exist and are hashed; need a declaration describing the capture process (Rule 901(b)(9))."
+    },
+    {
+      "id": "E3",
+      "title": "Ownership & authorship proof",
+      "authority_ids": ["USC17-410", "CASE-mitchell", "CASE-feist"],
+      "repo_artifacts": [],
+      "status": "missing",
+      "gap": "Client must supply originals, creation metadata, and registration certificates."
+    },
+    {
+      "id": "E4",
+      "title": "Registration-to-sue",
+      "authority_ids": ["USC17-411", "CASE-fourth-estate"],
+      "repo_artifacts": [],
+      "status": "missing",
+      "gap": "Confirm whether works are 'United States works'; obtain registration/refusal before filing."
+    },
+    {
+      "id": "E5",
+      "title": "Timely registration for statutory damages/fees",
+      "authority_ids": ["USC17-412", "USC17-410"],
+      "repo_artifacts": [],
+      "status": "missing",
+      "gap": "Registration dates vs. first publication and infringement date — the § 412 analysis."
+    },
+    {
+      "id": "E6",
+      "title": "Infringement elements (unauthorized copying/distribution)",
+      "authority_ids": ["USC17-501", "USC17-106"],
+      "repo_artifacts": ["takedowns/takedown_index.csv", "sophie_little_live_videos.csv"],
+      "status": "partial",
+      "gap": "URLs and attribution collected; need the JFF-original↔rehost match to prove the copy."
+    },
+    {
+      "id": "E7",
+      "title": "DMCA § 512(c) takedown notices",
+      "authority_ids": ["USC17-512"],
+      "repo_artifacts": ["takedowns/dmca_notice_abdlhub.txt", "takedowns/dmca_notice_netlify.txt",
+                          "takedowns/dmca_notice_bunny.txt", "takedowns/dmca_notice_supabase.txt"],
+      "status": "satisfied",
+      "gap": "Drafts contain all six § 512(c)(3) elements; complete placeholders and sign before sending."
+    },
+    {
+      "id": "E8",
+      "title": "Identity subpoena package (§ 512(h) / Rule 45)",
+      "authority_ids": ["USC17-512", "FRCP-45"],
+      "repo_artifacts": ["osint/SUBPOENA_TARGETS.md"],
+      "status": "partial",
+      "gap": "Targets and identifiers compiled; need the § 512(c)(3) notification + proposed subpoena + sworn declaration."
+    },
+    {
+      "id": "E9",
+      "title": "Search delisting (§ 512(d))",
+      "authority_ids": ["USC17-512"],
+      "repo_artifacts": [],
+      "status": "missing",
+      "gap": "No delisting requests drafted."
+    },
+    {
+      "id": "E10",
+      "title": "Damages proof (statutory and/or actual + profits)",
+      "authority_ids": ["USC17-504", "USC17-412"],
+      "repo_artifacts": ["damages/damages.json", "damages/damages.md"],
+      "status": "partial",
+      "gap": "Statutory matrix done; actual damages / infringer profits (ExoClick, donations, subscriptions) not yet evidenced."
+    },
+    {
+      "id": "E11",
+      "title": "Attorney's fees & costs exposure",
+      "authority_ids": ["USC17-505", "USC17-412"],
+      "repo_artifacts": ["damages/damages.json"],
+      "status": "partial",
+      "gap": "Available only with timely registration (§ 412)."
+    },
+    {
+      "id": "E12",
+      "title": "Injunction / impoundment",
+      "authority_ids": ["FRCP-65"],
+      "repo_artifacts": [],
+      "status": "missing",
+      "gap": "No TRO/preliminary-injunction papers."
+    },
+    {
+      "id": "E13",
+      "title": "Litigation hold / preservation of evidence",
+      "authority_ids": ["FRCP-37", "CASE-zubulake"],
+      "repo_artifacts": ["evidence/manifest.json"],
+      "status": "partial",
+      "gap": "Our own preservation is documented; preservation letters to third parties not yet sent."
+    },
+    {
+      "id": "E14",
+      "title": "Personal jurisdiction (Florida)",
+      "authority_ids": ["FL-48.193", "CASE-calder", "CASE-walden"],
+      "repo_artifacts": ["osint/PUBLIC_EXPOSURE.md"],
+      "status": "partial",
+      "gap": "Attribution collected; must tie the operator to Florida contacts (residence/IP/billing) — pending subpoena and Dominic's intel."
+    },
+    {
+      "id": "E15",
+      "title": "Venue",
+      "authority_ids": ["USC28-1400"],
+      "repo_artifacts": [],
+      "status": "missing",
+      "gap": "Counsel call once defendant's district is fixed."
+    },
+    {
+      "id": "E16",
+      "title": "Subject-matter jurisdiction",
+      "authority_ids": ["USC28-1338"],
+      "repo_artifacts": [],
+      "status": "missing",
+      "gap": "Plead in the complaint."
+    },
+    {
+      "id": "E17",
+      "title": "Foreign-author standing / Berne",
+      "authority_ids": ["USC17-104", "USC17-101", "USC17-411", "USC17-501"],
+      "repo_artifacts": [],
+      "status": "missing",
+      "gap": "Canadian author: confirm 'United States work' status and Berne eligibility; § 412 still applies for damages."
+    },
+    {
+      "id": "E18",
+      "title": "Declaration form (28 U.S.C. § 1746)",
+      "authority_ids": ["USC28-1746", "FRE-902"],
+      "repo_artifacts": [],
+      "status": "missing",
+      "gap": "No declaration/affidavit drafted yet."
+    },
+    {
+      "id": "E19",
+      "title": "Willfulness evidence",
+      "authority_ids": ["USC17-504"],
+      "repo_artifacts": ["osint/PUBLIC_EXPOSURE.md", "evidence/comments.json"],
+      "status": "partial",
+      "gap": "Takedown-ignored comment captured; assemble a dated willfulness timeline and test § 504(c)(3) registrar false-info presumption."
+    }
+  ]
+}

@@ -27,6 +27,7 @@ python evidence_store.py evidence      # verify all SHA-256 hashes -> all OK
 python timestamp.py                    # RFC 3161 timestamp
 python capture.py ; python archive.py  # page captures / Wayback
 python takedown.py ; python damages.py ; python package.py --zip
+python run_tests.py           # validate scrapes, comparisons, evidence, citations
 ```
 
 ## Environment
