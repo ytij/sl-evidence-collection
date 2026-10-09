@@ -1,0 +1,442 @@
+{
+  "generated_at": "2026-10-09T04:11:21.796139+00:00",
+  "target": "https://abdlhub.com",
+  "http": {
+    "homepage": {
+      "url": "https://abdlhub.com/",
+      "status": 200,
+      "headers": {
+        "Server": "Netlify",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Cache-Status": "\"Netlify Edge\"; hit; ttl=31520745",
+        "Age": "15255",
+        "Vary": "Accept-Encoding",
+        "ETag": "\"f3c61ef8b3825974fa247f26e228d4c2-ssl-df\"",
+        "X-Nf-Request-Id": "01M4FDQGSS5J3AA21WVZ7C5XHK",
+        "Strict-Transport-Security": "max-age=31536000",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin"
+      }
+    },
+    "netlify_function_bunny_videos": {
+      "url": "https://abdlhub.com/.netlify/functions/bunny-videos?page=1&perPage=1",
+      "status": 200,
+      "headers": {
+        "Server": "Netlify",
+        "Content-Type": "application/json",
+        "Cache-Status": "\"Netlify Durable\"; hit; ttl=1486, \"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+        "Age": "315",
+        "Vary": "Accept-Encoding",
+        "X-Nf-Request-Id": "01M4FDQHE1YPM8P23QWZSVXKXQ",
+        "Strict-Transport-Security": "max-age=31536000",
+        "Access-Control-Allow-Origin": "https://abdlhub.com"
+      }
+    },
+    "supabase_rest_root": {
+      "url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/",
+      "status": 401,
+      "headers": {
+        "Server": "cloudflare",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "Access-Control-Allow-Origin": "*",
+        "Alt-Svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "supabase_auth_settings": {
+      "url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/auth/v1/settings",
+      "status": 200,
+      "headers": {
+        "Server": "cloudflare",
+        "Content-Type": "application/json",
+        "Vary": "Origin, Accept-Encoding",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "CF-Cache-Status": "DYNAMIC",
+        "Alt-Svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "bunny_pull_zone_thumbnail": {
+      "url": "https://vz-e81debcf-c73.b-cdn.net/f045560b-be22-491d-8b12-a8629c6fdd74/thumbnail.jpg?width=480",
+      "status": 200,
+      "headers": {
+        "Server": "BunnyCDN-IL1-894",
+        "Content-Type": "image/jpeg",
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+    "bunny_embed_iframe": {
+      "url": "https://iframe.mediadelivery.net/embed/621930/f045560b-be22-491d-8b12-a8629c6fdd74",
+      "status": 200,
+      "headers": {
+        "Server": "Kestrel",
+        "Content-Type": "text/html; charset=utf-8",
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+    "fluidplayer_cdn": {
+      "url": "https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js",
+      "status": 200,
+      "headers": {
+        "Server": "CDN77-Turbo",
+        "Content-Type": "application/javascript",
+        "Age": "6267016",
+        "Vary": "Accept-Encoding",
+        "ETag": "W/\"6a69f28b-42e2b\"",
+        "Access-Control-Allow-Origin": "*",
+        "Alt-Svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "page": {
+    "hosts": [
+      "a.magsrv.com",
+      "a.pemsrv.com",
+      "abdlhub.com",
+      "assets.mediadelivery.net",
+      "cdn.fluidplayer.com",
+      "cdn.jsdelivr.net",
+      "cloud.umami.is",
+      "discord.com",
+      "discord.gg",
+      "fonts.googleapis.com",
+      "hbvwlzjxsmhreeqwypwp.supabase.co",
+      "iframe.mediadelivery.net",
+      "s.magsrv.com",
+      "schema.org",
+      "storage.bunnycdn.com",
+      "video.bunnycdn.com",
+      "vz-e81debcf-c73.b-cdn.net",
+      "www.google.com"
+    ],
+    "scripts": [
+      "https://a.magsrv.com/ad-provider.js",
+      "https://assets.mediadelivery.net/playerjs/playerjs-latest.min.js",
+      "https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"
+    ],
+    "stylesheets": [
+      "https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css"
+    ],
+    "preconnect": [
+      "https://fonts.googleapis.com",
+      "https://hbvwlzjxsmhreeqwypwp.supabase.co",
+      "https://vz-e81debcf-c73.b-cdn.net"
+    ],
+    "netlify_functions": [
+      "/.netlify/functions/bunny-videos",
+      "/.netlify/functions/request-upload",
+      "/.netlify/functions/set-title",
+      "/.netlify/functions/upload-avatar"
+    ],
+    "meta": [
+      "6a97888e-site-verification",
+      "apple-mobile-web-app-capable",
+      "apple-mobile-web-app-status-bar-style",
+      "apple-mobile-web-app-title",
+      "description",
+      "keywords",
+      "mobile-web-app-capable",
+      "robots",
+      "theme-color",
+      "twitter:card",
+      "twitter:description",
+      "twitter:image",
+      "twitter:site",
+      "twitter:title",
+      "viewport"
+    ],
+    "discord_invite": "kbnJTj2DB",
+    "ad_zones": [
+      "6009644",
+      "6016956"
+    ],
+    "umami_configured": true
+  },
+  "supabase": {
+    "tables": {
+      "comments": [
+        "body",
+        "created_at",
+        "id",
+        "likes",
+        "name",
+        "user_id",
+        "video_guid"
+      ],
+      "favorites": [],
+      "model_requests": [],
+      "poll_votes": [
+        "choice",
+        "created_at",
+        "poll_id",
+        "user_id",
+        "username"
+      ],
+      "site_config": [
+        "key",
+        "value"
+      ],
+      "title_suggestions": [],
+      "user_profiles": [
+        "bio",
+        "created_at",
+        "is_admin",
+        "is_mod",
+        "profile_picture_url",
+        "public_profile",
+        "show_watch_history",
+        "supporter_tier",
+        "supporter_until",
+        "updated_at",
+        "user_id",
+        "username",
+        "username_locked"
+      ],
+      "video_dislikes": [
+        "count",
+        "guid"
+      ],
+      "video_likes": [
+        "count",
+        "guid"
+      ],
+      "video_meta": [
+        "category",
+        "description",
+        "episode",
+        "guid",
+        "series_name",
+        "tags"
+      ],
+      "video_reactions": [
+        "count",
+        "emoji",
+        "video_guid"
+      ],
+      "video_reports": [],
+      "video_submissions": [
+        "category",
+        "created_at",
+        "description",
+        "file_size",
+        "id",
+        "rejection_reason",
+        "status",
+        "thumbnail_url",
+        "title",
+        "user_id",
+        "video_url"
+      ],
+      "video_views": [
+        "guid",
+        "views"
+      ],
+      "watch_history": []
+    },
+    "auth_settings": {
+      "external": {
+        "anonymous_users": false,
+        "apple": false,
+        "azure": false,
+        "bitbucket": false,
+        "discord": false,
+        "facebook": false,
+        "snapchat": false,
+        "figma": false,
+        "fly": false,
+        "github": false,
+        "gitlab": false,
+        "google": false,
+        "keycloak": false,
+        "kakao": false,
+        "linkedin": false,
+        "linkedin_oidc": false,
+        "notion": false,
+        "spotify": false,
+        "slack": false,
+        "slack_oidc": false,
+        "workos": false,
+        "twitch": false,
+        "twitter": false,
+        "email": true,
+        "phone": false,
+        "zoom": false
+      },
+      "disable_signup": false,
+      "mailer_autoconfirm": false,
+      "phone_autoconfirm": false,
+      "sms_provider": "twilio",
+      "saml_enabled": false,
+      "saml_private_key_next_configured": true,
+      "passkeys_enabled": false
+    },
+    "user_count": 728
+  },
+  "dns": {
+    "A": [
+      "18.208.88.157",
+      "98.84.224.111"
+    ],
+    "AAAA": [],
+    "NS": [
+      "dns3.p08.nsone.net",
+      "dns2.p08.nsone.net",
+      "dns1.p08.nsone.net",
+      "dns4.p08.nsone.net"
+    ],
+    "MX": [],
+    "TXT": [],
+    "SOA": [
+      "dns1.p01.nsone.net"
+    ],
+    "CAA": []
+  },
+  "tls": {
+    "abdlhub.com": {
+      "subject": {
+        "commonName": "abdlhub.com"
+      },
+      "issuer": {
+        "countryName": "US",
+        "organizationName": "Let's Encrypt",
+        "commonName": "YE2"
+      },
+      "notAfter": "Nov 26 17:45:14 2026 GMT",
+      "SANs": [
+        "*.abdlhub.com",
+        "abdlhub.com"
+      ]
+    },
+    "hbvwlzjxsmhreeqwypwp.supabase.co": {
+      "subject": {
+        "commonName": "supabase.co"
+      },
+      "issuer": {
+        "countryName": "US",
+        "organizationName": "Google Trust Services",
+        "commonName": "WE1"
+      },
+      "notAfter": "Nov 24 12:15:45 2026 GMT",
+      "SANs": [
+        "supabase.co",
+        "*.supabase.co"
+      ]
+    },
+    "vz-e81debcf-c73.b-cdn.net": {
+      "subject": {
+        "commonName": "*.b-cdn.net"
+      },
+      "issuer": {
+        "countryName": "GB",
+        "organizationName": "Sectigo Limited",
+        "commonName": "Sectigo Public Server Authentication CA DV R36"
+      },
+      "notAfter": "Nov 11 23:59:59 2026 GMT",
+      "SANs": [
+        "*.b-cdn.net",
+        "b-cdn.net"
+      ]
+    }
+  },
+  "technologies": {
+    "Hosting / edge": [
+      {
+        "name": "Netlify",
+        "evidence": "Server: Netlify; x-nf-request-id; Cache-Status: Netlify Edge; DNS SOA domains+netlify.netlify.com; NS *.nsone.net"
+      },
+      {
+        "name": "Netlify Functions",
+        "evidence": "Serverless endpoints under /.netlify/functions/"
+      },
+      {
+        "name": "Netlify DNS",
+        "evidence": "Apex NS = dns{1..4}.p08.nsone.net; SOA mname dns1.p01.nsone.net"
+      }
+    ],
+    "Video platform": [
+      {
+        "name": "Bunny Stream",
+        "evidence": "video.bunnycdn.com API; library id 621930; iframe/assets.mediadelivery.net"
+      },
+      {
+        "name": "Bunny CDN (pull zone)",
+        "evidence": "vz-e81debcf-c73.b-cdn.net serves thumbnails + HLS; *.b-cdn.net cert (Sectigo)"
+      },
+      {
+        "name": "Bunny Storage",
+        "evidence": "storage.bunnycdn.com for image uploads"
+      },
+      {
+        "name": "HLS + AES-128",
+        "evidence": "playlist.m3u8 master -> {res}/video.m3u8 -> *.dts segments; #EXT-X-KEY AES-128"
+      },
+      {
+        "name": "TUS resumable uploads",
+        "evidence": "tus-js-client@4 from cdn.jsdelivr.net (Bunny TUS endpoint)"
+      }
+    ],
+    "Backend / data": [
+      {
+        "name": "Supabase PostgREST",
+        "evidence": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/... ; public anon JWT embedded in page source"
+      },
+      {
+        "name": "Supabase Auth (GoTrue)",
+        "evidence": "https://hbvwlzjxsmhreeqwypwp.supabase.co/auth/v1/settings ; email provider, signup enabled"
+      },
+      {
+        "name": "Postgres tables",
+        "evidence": "video_meta, video_submissions, user_profiles, likes/views/comments, site_config, ..."
+      }
+    ],
+    "Frontend": [
+      {
+        "name": "Vanilla-JS SPA",
+        "evidence": "single index.html, hash/query routing (?v=guid), no framework bundle"
+      },
+      {
+        "name": "Fluid Player",
+        "evidence": "cdn.fluidplayer.com/v3 (HLS + VAST ad support)"
+      },
+      {
+        "name": "hls.js",
+        "evidence": "HLS engine bundled inside Fluid Player"
+      },
+      {
+        "name": "playerjs",
+        "evidence": "assets.mediadelivery.net/playerjs (drives the Bunny iframe)"
+      },
+      {
+        "name": "PWA",
+        "evidence": "theme-color, apple-mobile-web-app-* meta tags"
+      },
+      {
+        "name": "Google Fonts",
+        "evidence": "Inter + Syne via fonts.googleapis.com"
+      }
+    ],
+    "Advertising": [
+      {
+        "name": "ExoClick / ExoAds",
+        "evidence": "a.magsrv.com/ad-provider.js; s.magsrv.com VAST; a.pemsrv.com popunder; site-verification meta"
+      },
+      {
+        "name": "Zones",
+        "evidence": "banner zone 6009644; VAST idzone 6016956; grid ad every 5 cards; pre-roll gate + sticky banner"
+      }
+    ],
+    "Analytics": [
+      {
+        "name": "Umami (self-configurable)",
+        "evidence": "settings.analyticsSrc/analyticsId; default cloud.umami.is"
+      }
+    ],
+    "Comms": [
+      {
+        "name": "Discord",
+        "evidence": "discord.gg invite fetched via discord.com/api/v10/invites"
+      }
+    ]
+  }
+}

@@ -246,6 +246,18 @@ class PoliteSession:
         kw.setdefault("timeout", REQUEST_TIMEOUT)
         return self.session.get(url, headers=h, **kw)
 
+    def post(self, url, headers=None, referer=None, **kw):
+        if not self._budget_ok():
+            raise RuntimeError(f"request budget of {self.max_requests} exhausted")
+        host = urlparse(url).netloc
+        self.limiter.wait(host)
+        h = dict(BROWSER_HEADERS)
+        h["Referer"] = referer if referer is not None else REFERER
+        if headers:
+            h.update(headers)
+        kw.setdefault("timeout", REQUEST_TIMEOUT)
+        return self.session.post(url, headers=h, **kw)
+
     def warm_up(self, last_warm_iso=None, ttl=0):
         """One normal-looking page load to obtain cookies, at most once per TTL."""
         if self.session.cookies:
