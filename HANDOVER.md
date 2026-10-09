@@ -172,7 +172,7 @@ notion/                 Notion-import CSV + schema (generated)
 legal/                  METHODOLOGY, DECLARATION_1746, SUBPOENA_512h, COMPLAINT,
                         EXHIBIT_INDEX, AUTHORITIES, authorities.json,
                         preservation/, exhibits/
-README.md               front door: purpose, quickstart, directory map
+README.md               counsel-reviewable findings & evidence brief (front door)
 REPO_MAP.md             file-by-file index of every primary file
 AGENTS.md               rules + common commands (agent entry point)
 TODO.md                 live plan/priorities
