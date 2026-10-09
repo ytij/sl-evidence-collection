@@ -1,0 +1,11 @@
+[
+  {
+    "created_at": "2026-10-09T04:48:28.476262+00:00",
+    "target": "evidence/manifest.json",
+    "sha256": "0703d4d522900128789213a0d7683b8ebf10d05a7c8b5066c9c5e2e7f7dcd4bd",
+    "tsa": "https://freetsa.org/tsr",
+    "tsq": "evidence/timestamps/20261009T044828Z_manifest.tsq",
+    "tsr": "evidence/timestamps/20261009T044828Z_manifest.tsr",
+    "tsr_sha256": "7a59370d7d2a055d39f71ea9ed16b690e2069b315dad6afb9917f81cfcbe84f9"
+  }
+]
