@@ -352,31 +352,31 @@
       "id": "E3",
       "title": "Ownership & authorship proof",
       "authority_ids": ["USC17-410", "CASE-mitchell", "CASE-feist"],
-      "repo_artifacts": [],
-      "status": "missing",
-      "gap": "Client must supply originals, creation metadata, and registration certificates."
+      "repo_artifacts": ["legal/COMPLAINT.md"],
+      "status": "partial",
+      "gap": "Ownership pleader drafted in legal/COMPLAINT.md; client must supply originals, creation metadata, and registration certificates."
     },
     {
       "id": "E4",
       "title": "Registration-to-sue",
       "authority_ids": ["USC17-411", "CASE-fourth-estate"],
-      "repo_artifacts": [],
-      "status": "missing",
-      "gap": "Confirm whether works are 'United States works'; obtain registration/refusal before filing."
+      "repo_artifacts": ["legal/COMPLAINT.md"],
+      "status": "partial",
+      "gap": "Registration-to-sue pleaded as a shell; confirm 'United States work' status and obtain registration/refusal before filing."
     },
     {
       "id": "E5",
       "title": "Timely registration for statutory damages/fees",
       "authority_ids": ["USC17-412", "USC17-410"],
-      "repo_artifacts": [],
-      "status": "missing",
-      "gap": "Registration dates vs. first publication and infringement date — the § 412 analysis."
+      "repo_artifacts": ["legal/COMPLAINT.md"],
+      "status": "partial",
+      "gap": "§ 412 timing pleaded as a shell; need registration vs. first-publication and infringement dates."
     },
     {
       "id": "E6",
       "title": "Infringement elements (unauthorized copying/distribution)",
       "authority_ids": ["USC17-501", "USC17-106"],
-      "repo_artifacts": ["takedowns/takedown_index.csv", "sophie_little_live_videos.csv", "legal/EXHIBIT_INDEX.md"],
+      "repo_artifacts": ["takedowns/takedown_index.csv", "sophie_little_live_videos.csv", "legal/EXHIBIT_INDEX.md", "legal/COMPLAINT.md"],
       "status": "partial",
       "gap": "URLs and attribution collected and itemized as Exhibits B and I; need the JFF-original↔rehost match to prove the copy."
     },
@@ -409,7 +409,7 @@
       "id": "E10",
       "title": "Damages proof (statutory and/or actual + profits)",
       "authority_ids": ["USC17-504", "USC17-412"],
-      "repo_artifacts": ["damages/damages.json", "damages/damages.md", "legal/EXHIBIT_INDEX.md"],
+      "repo_artifacts": ["damages/damages.json", "damages/damages.md", "legal/EXHIBIT_INDEX.md", "legal/COMPLAINT.md"],
       "status": "partial",
       "gap": "Statutory matrix (Exhibit H) done; actual damages / infringer profits (ExoClick, donations, subscriptions) not yet evidenced."
     },
@@ -425,9 +425,9 @@
       "id": "E12",
       "title": "Injunction / impoundment",
       "authority_ids": ["FRCP-65"],
-      "repo_artifacts": [],
-      "status": "missing",
-      "gap": "No TRO/preliminary-injunction papers."
+      "repo_artifacts": ["legal/COMPLAINT.md"],
+      "status": "partial",
+      "gap": "Injunctive prayer included in legal/COMPLAINT.md; separate TRO/preliminary-injunction motion not yet drafted."
     },
     {
       "id": "E13",
@@ -443,25 +443,25 @@
       "id": "E14",
       "title": "Personal jurisdiction (Florida)",
       "authority_ids": ["FL-48.193", "CASE-calder", "CASE-walden"],
-      "repo_artifacts": ["osint/PUBLIC_EXPOSURE.md"],
+      "repo_artifacts": ["osint/PUBLIC_EXPOSURE.md", "legal/COMPLAINT.md"],
       "status": "partial",
-      "gap": "Attribution collected; must tie the operator to Florida contacts (residence/IP/billing) — pending subpoena and Dominic's intel."
+      "gap": "Attribution collected and jurisdiction pleaded as a shell; must tie the operator to Florida contacts (residence/IP/billing) — pending subpoena and Dominic's intel."
     },
     {
       "id": "E15",
       "title": "Venue",
       "authority_ids": ["USC28-1400"],
-      "repo_artifacts": [],
-      "status": "missing",
-      "gap": "Counsel call once defendant's district is fixed."
+      "repo_artifacts": ["legal/COMPLAINT.md"],
+      "status": "partial",
+      "gap": "Venue pleaded as a shell; confirm the district once the defendant's location is fixed."
     },
     {
       "id": "E16",
       "title": "Subject-matter jurisdiction",
       "authority_ids": ["USC28-1338"],
-      "repo_artifacts": [],
-      "status": "missing",
-      "gap": "Plead in the complaint."
+      "repo_artifacts": ["legal/COMPLAINT.md"],
+      "status": "partial",
+      "gap": "Subject-matter jurisdiction pleaded in legal/COMPLAINT.md."
     },
     {
       "id": "E17",

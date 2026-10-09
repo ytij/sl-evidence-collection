@@ -209,14 +209,51 @@ def write_preservation_letters():
     return written
 
 
+def write_exhibit_shells(works):
+    out_dir = os.path.join(LEGAL, "exhibits")
+    os.makedirs(out_dir, exist_ok=True)
+    written = []
+    for tag, desc, rel, proves in EXHIBITS:
+        digest = sha256(os.path.join(HERE, rel)) or "(directory — see its manifest)"
+        lines = [
+            f"# Exhibit {tag} — {desc}",
+            "",
+            f"**Proves:** {proves}",
+            f"**Underlying artifact:** `{rel}`",
+            f"**SHA-256:** `{digest}`",
+            "**Timestamp:** see `evidence/timestamps/index.json`.",
+            "**Custodian:** [DECLARANT NAME] — see `legal/DECLARATION_1746.md`.",
+            "",
+            "## Contents",
+            "",
+            "> [ATTACH / INSERT THE EXHIBIT CONTENT HERE]",
+            "",
+        ]
+        if tag == "B":
+            lines += [
+                "| # | Title | Page URL | Uploaded |",
+                "| --- | --- | --- | --- |",
+            ]
+            for i, w in enumerate(works, 1):
+                lines.append(f"| {i} | {w['title'][:60]} | {w['page_url']} | {w['submitted_at'][:10]} |")
+            lines.append("")
+        path = os.path.join(out_dir, f"exhibit_{tag}.md")
+        with open(path, "w", encoding="utf-8", newline="") as fh:
+            fh.write("\n".join(lines))
+        written.append(path)
+    return written
+
+
 def main():
     os.makedirs(LEGAL, exist_ok=True)
     works = load_works()
     idx = write_exhibit_index(works)
     letters = write_preservation_letters()
+    shells = write_exhibit_shells(works)
     print(f"wrote {idx} ({len(works)} works)")
     for p in letters:
         print(f"wrote {os.path.relpath(p, HERE).replace(chr(92), '/')}")
+    print(f"wrote {len(shells)} exhibit shells")
 
 
 if __name__ == "__main__":

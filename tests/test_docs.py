@@ -19,6 +19,8 @@ REFERENCED = [
     "package.py",
     "legal/AUTHORITIES.md",
     "legal/authorities.json",
+    "legal/COMPLAINT.md",
+    "legal/exhibits/exhibit_A.md",
     "osint/PUBLIC_EXPOSURE.md",
     "osint/SITE_CATALOG.md",
     "osint/SUBPOENA_TARGETS.md",

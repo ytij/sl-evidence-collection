@@ -63,6 +63,26 @@ class TestCourtDocs(unittest.TestCase):
         for phrase in ("sha-256", "rfc 3161", "no authentication", "limitations", "public access"):
             self.assertIn(phrase, low, phrase)
 
+    def test_complaint_shell(self):
+        text = read("legal/COMPLAINT.md")
+        for cite in ("17 U.S.C. § 501", "28 U.S.C. § 1338", "28 U.S.C. § 1400",
+                     "§ 504(c)", "§ 106", "§ 412"):
+            self.assertIn(cite, text, cite)
+        for section in ("NATURE OF THE ACTION", "JURISDICTION AND VENUE",
+                        "CLAIMS FOR RELIEF", "PRAYER FOR RELIEF", "JURY"):
+            self.assertIn(section, text, section)
+        self.assertIn("[PLAINTIFF NAME]", text)
+        self.assertIn("Exhibit B", text)
+
+    def test_exhibit_shells_exist(self):
+        for tag in "ABCDEFGHI":
+            rel = f"legal/exhibits/exhibit_{tag}.md"
+            self.assertTrue(exists(rel), rel)
+            text = read(rel)
+            self.assertIn(f"Exhibit {tag}", text)
+            self.assertIn("Underlying artifact", text)
+            self.assertIn("SHA-256", text)
+
 
 if __name__ == "__main__":
     unittest.main()

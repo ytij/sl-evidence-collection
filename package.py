@@ -102,6 +102,11 @@ def main():
     if os.path.isdir(pres_src):
         for name in os.listdir(pres_src):
             shutil.copy2(os.path.join(pres_src, name), os.path.join(legal_dst, "preservation", name))
+    ex_src = os.path.join(legal_src, "exhibits")
+    if os.path.isdir(ex_src):
+        os.makedirs(os.path.join(legal_dst, "exhibits"), exist_ok=True)
+        for name in os.listdir(ex_src):
+            shutil.copy2(os.path.join(ex_src, name), os.path.join(legal_dst, "exhibits", name))
 
     # Evidence inventory.
     with open(os.path.join(PKG, "evidence_index.csv"), "w", newline="", encoding="utf-8-sig") as fh:

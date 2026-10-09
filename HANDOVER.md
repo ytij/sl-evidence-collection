@@ -161,8 +161,9 @@ damages.py              damages inputs & §504(c) matrix -> damages/
 match.py                JFF originals <-> rehosts matcher -> matches/
 package.py              lawyer-ready bundle -> case_package/ (+ zip)
 build_legal.py          generates legal/EXHIBIT_INDEX.md + preservation letters
-legal/                  METHODOLOGY, DECLARATION_1746, SUBPOENA_512h, EXHIBIT_INDEX,
-                        AUTHORITIES, authorities.json, preservation/
+legal/                  METHODOLOGY, DECLARATION_1746, SUBPOENA_512h, COMPLAINT,
+                        EXHIBIT_INDEX, AUTHORITIES, authorities.json,
+                        preservation/, exhibits/
 TODO.md                 live plan/priorities
 HANDOVER.md             this document
 

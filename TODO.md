@@ -75,6 +75,6 @@ So P1 (preserve) and P2 (register) are co-#1: one protects the evidence, the oth
 | P5 | `takedown.py` | done (12 works, 4 notices) |
 | P4 | `damages.py` | done |
 | — | `legal/AUTHORITIES.md` (cited) | done |
-| — | `legal/` court drafts + `build_legal.py` | done (drafts) |
-| — | `tests/` + `run_tests.py` | done (64 tests) |
+| — | `legal/` court drafts + `build_legal.py` | done (complaint/exhibits shells) |
+| — | `tests/` + `run_tests.py` | done (66 tests) |
 | — | `package.py` (lawyer bundle) | done |
