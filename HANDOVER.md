@@ -154,6 +154,8 @@ evidence_store.py       EvidenceStore + SHA-256 manifest + `verify` CLI
 timestamp.py            RFC 3161 (FreeTSA) timestamper; .tsq/.tsr + index
 capture.py              Playwright page capture (HTML+PNG+PDF), age-gate aware
 archive.py              Wayback Machine submission
+preserve_thumbs.py      stealth preservation of the 610 orphaned thumbnails
+THUMBNAIL_PRESERVATION.md  stealth analysis + rollout plan for the thumbnails
 osint_recon.py          tech-stack OSINT -> osint/site_catalog.{json,md}
 osint/public_exposure.py  attribution/public-exposure review -> osint/ + evidence/
 takedown.py             DMCA §512(c) notice generator -> takedowns/

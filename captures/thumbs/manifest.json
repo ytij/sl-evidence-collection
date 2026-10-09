@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-09T05:59:01.901497+00:00",
+  "entries": {
+    "7d42429f-5942-4dfd-9e39-ef8a811926ac": {
+      "file": "7d42429f-5942-4dfd-9e39-ef8a811926ac.jpg",
+      "url": "https://vz-e81debcf-c73.b-cdn.net/7d42429f-5942-4dfd-9e39-ef8a811926ac/thumbnail.jpg?width=480",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 94631,
+      "sha256": "761c88f40ebd1e5218b6faa9c6fb8b31ac5fbed667bd29123fef9bb2b7d1b524",
+      "etag": "",
+      "fetched_at": "2026-10-09T05:59:02.601491+00:00",
+      "live": false
+    },
+    "c3ac3203-5e11-4b8b-bd14-99126f7aa5b7": {
+      "file": "c3ac3203-5e11-4b8b-bd14-99126f7aa5b7.jpg",
+      "url": "https://vz-e81debcf-c73.b-cdn.net/c3ac3203-5e11-4b8b-bd14-99126f7aa5b7/thumbnail.jpg?width=480",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 36669,
+      "sha256": "e72175cc013bc1d44abef05f6c5e44d9a3e253df6c4d3ded687497b613fca717",
+      "etag": "",
+      "fetched_at": "2026-10-09T05:59:11.048027+00:00",
+      "live": false
+    }
+  }
+}

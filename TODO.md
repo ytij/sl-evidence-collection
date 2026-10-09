@@ -30,7 +30,7 @@ So P1 (preserve) and P2 (register) are co-#1: one protects the evidence, the oth
 - [x] Full **page capture** (HTML + screenshot + PDF) per live URL (`capture.py`) — 12/12 captured, hashed, timestamped → `captures/20261009T050349Z/`.
 - [x] Independent archival: `archive.py` submitted the 12 works to the **Wayback Machine** (8/12 snapshotted; 4 retryable) → `captures/archive.json`.
 - [ ] Capture the **monetization** surface (ExoClick zones, Bitcoin, supporter paywall) as served on-page.
-- [ ] Preserve the **delisted** works' thumbnails (610) + `video_meta` rows (already snapshotted) as proof they existed.
+- [ ] Preserve the **delisted** works' thumbnails (610) via `preserve_thumbs.py` (low-and-slow; see `THUMBNAIL_PRESERVATION.md`) + `video_meta` rows (already snapshotted).
 
 ## P2 — Ownership & registration  *(co-#1)*
 - [ ] Per-work **US Copyright Office registration** status; register now if not timely (statutory damages + fees).
