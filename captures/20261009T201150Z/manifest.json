@@ -1,0 +1,173 @@
+{
+  "count": 14,
+  "records": [
+    {
+      "guid": "5d20b4a7-b038-49cc-9c34-007117019451",
+      "page_url": "https://abdlhub.com/?v=5d20b4a7-b038-49cc-9c34-007117019451",
+      "captured_at": "2026-10-09T20:11:54Z",
+      "html": "captures/20261009T201150Z/5d20b4a7-b038-49cc-9c34-007117019451.html",
+      "png": "captures/20261009T201150Z/5d20b4a7-b038-49cc-9c34-007117019451.png",
+      "pdf": "captures/20261009T201150Z/5d20b4a7-b038-49cc-9c34-007117019451.pdf",
+      "html_sha256": "5bf2ab6315ec9b7ab83e54446636c8dbe23e4658d5cb6cee403497a3eb8488cc",
+      "png_sha256": "6a6f714c36dc9030840bc0c9e311f49e327e7235cbcb53847e3b8a8aa3233b81",
+      "pdf_sha256": "43a7218f8a47848940c3758eb9a6fb4337a6412af4557c626476f7e63abe4b59",
+      "status": "ok"
+    },
+    {
+      "guid": "03bfd473-3c67-4bae-aee1-ee7120b6664c",
+      "page_url": "https://abdlhub.com/?v=03bfd473-3c67-4bae-aee1-ee7120b6664c",
+      "captured_at": "2026-10-09T20:12:10Z",
+      "html": "captures/20261009T201150Z/03bfd473-3c67-4bae-aee1-ee7120b6664c.html",
+      "png": "captures/20261009T201150Z/03bfd473-3c67-4bae-aee1-ee7120b6664c.png",
+      "pdf": "captures/20261009T201150Z/03bfd473-3c67-4bae-aee1-ee7120b6664c.pdf",
+      "html_sha256": "95ec7c3db4dac6a6bf9506c1c3b9f5505955430fbfcb53186f152328871a051c",
+      "png_sha256": "6a78dab28d6eafb4cb96c0f3cb0d17b268fa2c8d6f955b6b7a7e8f78f3a51b5b",
+      "pdf_sha256": "fca38ea473ceb303545ff6c3698ab580c1f540387300c81bafb4d286064c38c4",
+      "status": "ok"
+    },
+    {
+      "guid": "26cf42e4-3fb8-44da-9822-7758b3a692fc",
+      "page_url": "https://abdlhub.com/?v=26cf42e4-3fb8-44da-9822-7758b3a692fc",
+      "captured_at": "2026-10-09T20:12:21Z",
+      "html": "captures/20261009T201150Z/26cf42e4-3fb8-44da-9822-7758b3a692fc.html",
+      "png": "captures/20261009T201150Z/26cf42e4-3fb8-44da-9822-7758b3a692fc.png",
+      "pdf": "captures/20261009T201150Z/26cf42e4-3fb8-44da-9822-7758b3a692fc.pdf",
+      "html_sha256": "dde9de27fe2c23056b37671980c6dd080bc756044ac8f0df38f987c128fc36d8",
+      "png_sha256": "43592113c07a2bc69538c478bbb37f9b42dcfa2d6e0237beb18044d0d5be57ce",
+      "pdf_sha256": "c3d00ef5dad54cb3f1372546dc4f4044219781ac12eb5e4baf1314d81337b7de",
+      "status": "ok"
+    },
+    {
+      "guid": "50e8212f-eec5-465a-a080-42f4e09fd7f6",
+      "page_url": "https://abdlhub.com/?v=50e8212f-eec5-465a-a080-42f4e09fd7f6",
+      "captured_at": "2026-10-09T20:12:31Z",
+      "html": "captures/20261009T201150Z/50e8212f-eec5-465a-a080-42f4e09fd7f6.html",
+      "png": "captures/20261009T201150Z/50e8212f-eec5-465a-a080-42f4e09fd7f6.png",
+      "pdf": "captures/20261009T201150Z/50e8212f-eec5-465a-a080-42f4e09fd7f6.pdf",
+      "html_sha256": "abd85c62c943867821a70f996d7d94803f6c2c93746518868d8bef9b00270ddb",
+      "png_sha256": "38f68edccf63181ddb5dc988c03e4d8808be87638d6e35bfba26d4f141d2f3c1",
+      "pdf_sha256": "92bd6b5cde24c95c5d014aac207051c9bc63b8a157c7feee84745c3f083ef935",
+      "status": "ok"
+    },
+    {
+      "guid": "ad86a3df-be79-4629-ab1a-5fdd25249377",
+      "page_url": "https://abdlhub.com/?v=ad86a3df-be79-4629-ab1a-5fdd25249377",
+      "captured_at": "2026-10-09T20:12:40Z",
+      "html": "captures/20261009T201150Z/ad86a3df-be79-4629-ab1a-5fdd25249377.html",
+      "png": "captures/20261009T201150Z/ad86a3df-be79-4629-ab1a-5fdd25249377.png",
+      "pdf": "captures/20261009T201150Z/ad86a3df-be79-4629-ab1a-5fdd25249377.pdf",
+      "html_sha256": "a3c724f4f07f2657dffb90a461453478ab665c9c1c5b4fa222de1ce8e9a87b3b",
+      "png_sha256": "aff4c1d913c43ca3bbea6aa04429e1928bb14bec31026dc5a29fe45dcac1623a",
+      "pdf_sha256": "a59463c1e5dcb1f83fdb5c0f418e5e57a0f44f6b586177e2e9ef3a70000e957a",
+      "status": "ok"
+    },
+    {
+      "guid": "02f46a22-2881-4dfa-a888-7f0dfbf3aefb",
+      "page_url": "https://abdlhub.com/?v=02f46a22-2881-4dfa-a888-7f0dfbf3aefb",
+      "captured_at": "2026-10-09T20:12:49Z",
+      "html": "captures/20261009T201150Z/02f46a22-2881-4dfa-a888-7f0dfbf3aefb.html",
+      "png": "captures/20261009T201150Z/02f46a22-2881-4dfa-a888-7f0dfbf3aefb.png",
+      "pdf": "captures/20261009T201150Z/02f46a22-2881-4dfa-a888-7f0dfbf3aefb.pdf",
+      "html_sha256": "81f866e5c8925f355d2ee36fbe9f8d8ba7c62fb4f4f1d5bae73b9f1dbef5e9ed",
+      "png_sha256": "3448ec2d0fd6ec1350fe244bb82155cf4fa0e67bfceb182696f4e50f31656c91",
+      "pdf_sha256": "e1a7274309c71daa9c2388e22ebe0bbbcfbf2ff0ad77a13b370e7278744520cc",
+      "status": "ok"
+    },
+    {
+      "guid": "f64107b2-9919-4c19-99ce-115eaf90432a",
+      "page_url": "https://abdlhub.com/?v=f64107b2-9919-4c19-99ce-115eaf90432a",
+      "captured_at": "2026-10-09T20:12:58Z",
+      "html": "captures/20261009T201150Z/f64107b2-9919-4c19-99ce-115eaf90432a.html",
+      "png": "captures/20261009T201150Z/f64107b2-9919-4c19-99ce-115eaf90432a.png",
+      "pdf": "captures/20261009T201150Z/f64107b2-9919-4c19-99ce-115eaf90432a.pdf",
+      "html_sha256": "acd7d41cd54040f29385f48b756a983da6e32d71179c9af040289b38feb72ef5",
+      "png_sha256": "0b1e0a5c112dd37f41d0a0aabdbfc88c9fb532fffdd5d7a19d92cd10e36c406c",
+      "pdf_sha256": "f635388773fb310fba6a3ff6df1344f7e2be6a25c2be1e14cf9d484366cc0fc0",
+      "status": "ok"
+    },
+    {
+      "guid": "c1904e3e-e123-4ddb-8830-b53a7c55a31e",
+      "page_url": "https://abdlhub.com/?v=c1904e3e-e123-4ddb-8830-b53a7c55a31e",
+      "captured_at": "2026-10-09T20:13:07Z",
+      "html": "captures/20261009T201150Z/c1904e3e-e123-4ddb-8830-b53a7c55a31e.html",
+      "png": "captures/20261009T201150Z/c1904e3e-e123-4ddb-8830-b53a7c55a31e.png",
+      "pdf": "captures/20261009T201150Z/c1904e3e-e123-4ddb-8830-b53a7c55a31e.pdf",
+      "html_sha256": "78cd0e70f0d1b41a5caa9fcbee80337a47f3ab9047dedd35e76b05bccc493af5",
+      "png_sha256": "8e79366eb419101e00e14303250bae120785aebd18679508b18ae9f1b9366874",
+      "pdf_sha256": "7af72ee15d0e6dff618ea1ebaee6bbd49c823c5832a52120b9c9660d25084a2e",
+      "status": "ok"
+    },
+    {
+      "guid": "cbc1420c-cd65-4f92-b06c-73092650ab13",
+      "page_url": "https://abdlhub.com/?v=cbc1420c-cd65-4f92-b06c-73092650ab13",
+      "captured_at": "2026-10-09T20:13:16Z",
+      "html": "captures/20261009T201150Z/cbc1420c-cd65-4f92-b06c-73092650ab13.html",
+      "png": "captures/20261009T201150Z/cbc1420c-cd65-4f92-b06c-73092650ab13.png",
+      "pdf": "captures/20261009T201150Z/cbc1420c-cd65-4f92-b06c-73092650ab13.pdf",
+      "html_sha256": "990e914997f93d404aa5311f60c45b8f2a185f951103f9f650ea6be1a84cbeaa",
+      "png_sha256": "e9a29825ae7c1d9cfb7691945cb9d94ed5c54fc8f56968edcc407e0694b6692b",
+      "pdf_sha256": "3fe44a899e8636db99152a0528b3d02cc53e62307640466860bdc01031f68c45",
+      "status": "ok"
+    },
+    {
+      "guid": "710142df-923e-4ad3-80d0-c7a87391fc3e",
+      "page_url": "https://abdlhub.com/?v=710142df-923e-4ad3-80d0-c7a87391fc3e",
+      "captured_at": "2026-10-09T20:13:25Z",
+      "html": "captures/20261009T201150Z/710142df-923e-4ad3-80d0-c7a87391fc3e.html",
+      "png": "captures/20261009T201150Z/710142df-923e-4ad3-80d0-c7a87391fc3e.png",
+      "pdf": "captures/20261009T201150Z/710142df-923e-4ad3-80d0-c7a87391fc3e.pdf",
+      "html_sha256": "efae4c8c3abd2c4077149101450ad251aa6150f44743e9b3aa251bf39dc66986",
+      "png_sha256": "d757a6e91a2fc1491504c8e9a91a338f72c355de64fc01d758aa86b922252ffc",
+      "pdf_sha256": "9832a1bf2dbe5c88908f497f20959f60e5b9ff734a89eedd451a252b139144b2",
+      "status": "ok"
+    },
+    {
+      "guid": "39b63ca2-4e5a-406c-94bd-3fb72d55a879",
+      "page_url": "https://abdlhub.com/?v=39b63ca2-4e5a-406c-94bd-3fb72d55a879",
+      "captured_at": "2026-10-09T20:13:34Z",
+      "html": "captures/20261009T201150Z/39b63ca2-4e5a-406c-94bd-3fb72d55a879.html",
+      "png": "captures/20261009T201150Z/39b63ca2-4e5a-406c-94bd-3fb72d55a879.png",
+      "pdf": "captures/20261009T201150Z/39b63ca2-4e5a-406c-94bd-3fb72d55a879.pdf",
+      "html_sha256": "2d13990cdca6f4c2861082e2e8cd19f56ea812af3de230e9f0f0e330ca7106a7",
+      "png_sha256": "23fcd09fa43d7e4ab4ead389b0604bbfbed18f06e091887e89b553adc7961f06",
+      "pdf_sha256": "c39dae2d9c06252a973cccd4bb525c1ff20aa3868fe84b2df50d6e4275891ec0",
+      "status": "ok"
+    },
+    {
+      "guid": "4478076e-76ec-42d9-886b-a61ba179235a",
+      "page_url": "https://abdlhub.com/?v=4478076e-76ec-42d9-886b-a61ba179235a",
+      "captured_at": "2026-10-09T20:13:44Z",
+      "html": "captures/20261009T201150Z/4478076e-76ec-42d9-886b-a61ba179235a.html",
+      "png": "captures/20261009T201150Z/4478076e-76ec-42d9-886b-a61ba179235a.png",
+      "pdf": "captures/20261009T201150Z/4478076e-76ec-42d9-886b-a61ba179235a.pdf",
+      "html_sha256": "4654c6cc3e9ab1040565083fb0e52eb5e4465ae6bd9b62b66808c9f466162b90",
+      "png_sha256": "0c1f4134e0a6dfbd7f6b887ae0908b1639e0888852721e67396d20ffb7aa0719",
+      "pdf_sha256": "c5bc356b85433ac8abed876f613965aef1e3ea4bf39a3d561ee77f2a9391fe84",
+      "status": "ok"
+    },
+    {
+      "guid": "9627aedf-d3d6-4a5a-8141-6467c764a33a",
+      "page_url": "https://abdlhub.com/?v=9627aedf-d3d6-4a5a-8141-6467c764a33a",
+      "captured_at": "2026-10-09T20:13:53Z",
+      "html": "captures/20261009T201150Z/9627aedf-d3d6-4a5a-8141-6467c764a33a.html",
+      "png": "captures/20261009T201150Z/9627aedf-d3d6-4a5a-8141-6467c764a33a.png",
+      "pdf": "captures/20261009T201150Z/9627aedf-d3d6-4a5a-8141-6467c764a33a.pdf",
+      "html_sha256": "c17928aad8cd2689a09f3616ba4351d7e0407a0cff032bc85aff4ca141126882",
+      "png_sha256": "fddee671b1cfe85602a3001343b30a455fbd324e11041312785222e7602a6a11",
+      "pdf_sha256": "41d69aa0379717b25f45f6782d0506dec6b86884f4f4e5e86d02a3203e94454b",
+      "status": "ok"
+    },
+    {
+      "guid": "8f71399f-5565-497a-944f-466ad42b0271",
+      "page_url": "https://abdlhub.com/?v=8f71399f-5565-497a-944f-466ad42b0271",
+      "captured_at": "2026-10-09T20:14:02Z",
+      "html": "captures/20261009T201150Z/8f71399f-5565-497a-944f-466ad42b0271.html",
+      "png": "captures/20261009T201150Z/8f71399f-5565-497a-944f-466ad42b0271.png",
+      "pdf": "captures/20261009T201150Z/8f71399f-5565-497a-944f-466ad42b0271.pdf",
+      "html_sha256": "2cc42e3d9b4378a27fc23b36d68969fdce8888995a4adf50cda3e76abbd78aaf",
+      "png_sha256": "8ea31b0bf6439460047f439ffc7b95964d362c7eb5fe610e7aed271a16505bba",
+      "pdf_sha256": "da423df73f00e870926cb81030ba4481dca50ff020a3a09ad76d35eff99e957f",
+      "status": "ok"
+    }
+  ]
+}

@@ -16,6 +16,7 @@ Usage:
     python capture.py --headed       # watch it run
 """
 
+import csv
 import hashlib
 import json
 import os
@@ -25,14 +26,12 @@ import time
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "captures")
 
-ATTRIBUTED_GUIDS = [
-    "8f71399f-5565-497a-944f-466ad42b0271", "9627aedf-d3d6-4a5a-8141-6467c764a33a",
-    "4478076e-76ec-42d9-886b-a61ba179235a", "39b63ca2-4e5a-406c-94bd-3fb72d55a879",
-    "710142df-923e-4ad3-80d0-c7a87391fc3e", "cbc1420c-cd65-4f92-b06c-73092650ab13",
-    "c1904e3e-e123-4ddb-8830-b53a7c55a31e", "f64107b2-9919-4c19-99ce-115eaf90432a",
-    "02f46a22-2881-4dfa-a888-7f0dfbf3aefb", "50e8212f-eec5-465a-a080-42f4e09fd7f6",
-    "26cf42e4-3fb8-44da-9822-7758b3a692fc", "03bfd473-3c67-4bae-aee1-ee7120b6664c",
-]
+LIVE_CSV = os.path.join(HERE, "sophie_little_live_videos.csv")
+
+
+def live_guids():
+    with open(LIVE_CSV, encoding="utf-8-sig") as fh:
+        return [r["guid"] for r in csv.DictReader(fh)]
 
 
 def sha256(path):
@@ -50,7 +49,9 @@ def main():
     if "--limit" in sys.argv:
         limit = int(sys.argv[sys.argv.index("--limit") + 1])
     headed = "--headed" in sys.argv
-    guids = ATTRIBUTED_GUIDS[:limit] if limit else ATTRIBUTED_GUIDS
+    guids = live_guids()
+    if limit:
+        guids = guids[:limit]
 
     run_dir = os.path.join(OUT, time.strftime("%Y%m%dT%H%M%SZ", time.gmtime()))
     os.makedirs(run_dir, exist_ok=True)

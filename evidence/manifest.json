@@ -9,13 +9,20 @@
           "row_count": 2988,
           "sha256": "64a75b8187b6e3d7244a2c611a4469462d281602a36071e66d764d10711e3603",
           "note": "Supabase video_meta full table"
+        },
+        {
+          "fetched_at": "2026-10-09T19:44:07.226391+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/video_meta?select=guid,description,tags,category,series_name,episode&order=guid&limit=1000&offset=2000",
+          "row_count": 2988,
+          "sha256": "dd3b43cbc3aeb8940d4b415b05aaee2bef9f081adad2c895f9d40bff48ef0c87",
+          "note": "Supabase video_meta full table"
         }
       ],
       "latest": {
-        "fetched_at": "2026-10-09T04:22:45.300674+00:00",
+        "fetched_at": "2026-10-09T19:44:07.226391+00:00",
         "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/video_meta?select=guid,description,tags,category,series_name,episode&order=guid&limit=1000&offset=2000",
         "row_count": 2988,
-        "sha256": "64a75b8187b6e3d7244a2c611a4469462d281602a36071e66d764d10711e3603",
+        "sha256": "dd3b43cbc3aeb8940d4b415b05aaee2bef9f081adad2c895f9d40bff48ef0c87",
         "note": "Supabase video_meta full table",
         "file": "video_meta.json"
       }
@@ -28,13 +35,20 @@
           "row_count": 3215,
           "sha256": "4d8db8685fdb5282c8ed9e5471d1593174efb507b19cc71963975b7415a4e090",
           "note": "Bunny Stream library 621930 catalog"
+        },
+        {
+          "fetched_at": "2026-10-09T19:44:13.580398+00:00",
+          "source_url": "https://abdlhub.com/.netlify/functions/bunny-videos",
+          "row_count": 3215,
+          "sha256": "6aebfe687d2dfcd1855bcdd6179cfd94fd625df4dfa9e8406caf56198c10e900",
+          "note": "Bunny Stream library 621930 catalog"
         }
       ],
       "latest": {
-        "fetched_at": "2026-10-09T04:22:50.635937+00:00",
+        "fetched_at": "2026-10-09T19:44:13.580398+00:00",
         "source_url": "https://abdlhub.com/.netlify/functions/bunny-videos",
         "row_count": 3215,
-        "sha256": "4d8db8685fdb5282c8ed9e5471d1593174efb507b19cc71963975b7415a4e090",
+        "sha256": "6aebfe687d2dfcd1855bcdd6179cfd94fd625df4dfa9e8406caf56198c10e900",
         "note": "Bunny Stream library 621930 catalog",
         "file": "bunny_catalog.json"
       }
@@ -230,5 +244,5 @@
       }
     }
   },
-  "updated_at": "2026-10-09T04:22:59.488623+00:00"
+  "updated_at": "2026-10-09T19:44:13.633242+00:00"
 }

@@ -1,89 +1,103 @@
 {
-  "count": 12,
+  "count": 14,
   "records": [
     {
-      "guid": "8f71399f-5565-497a-944f-466ad42b0271",
-      "page_url": "https://abdlhub.com/?v=8f71399f-5565-497a-944f-466ad42b0271",
-      "archived_url": "http://web.archive.org/web/20261009044930/https://abdlhub.com/?v=8f71399f-5565-497a-944f-466ad42b0271",
-      "status": "ok",
-      "submitted_at": "2026-10-09T04:50:29Z"
-    },
-    {
-      "guid": "9627aedf-d3d6-4a5a-8141-6467c764a33a",
-      "page_url": "https://abdlhub.com/?v=9627aedf-d3d6-4a5a-8141-6467c764a33a",
-      "archived_url": "http://web.archive.org/web/20261009044955/https://abdlhub.com/?v=9627aedf-d3d6-4a5a-8141-6467c764a33a",
-      "status": "ok",
-      "submitted_at": "2026-10-09T04:50:38Z"
-    },
-    {
-      "guid": "4478076e-76ec-42d9-886b-a61ba179235a",
-      "page_url": "https://abdlhub.com/?v=4478076e-76ec-42d9-886b-a61ba179235a",
+      "guid": "5d20b4a7-b038-49cc-9c34-007117019451",
+      "page_url": "https://abdlhub.com/?v=5d20b4a7-b038-49cc-9c34-007117019451",
       "archived_url": null,
-      "status": "no-snapshot",
-      "submitted_at": "2026-10-09T04:51:07Z"
-    },
-    {
-      "guid": "39b63ca2-4e5a-406c-94bd-3fb72d55a879",
-      "page_url": "https://abdlhub.com/?v=39b63ca2-4e5a-406c-94bd-3fb72d55a879",
-      "archived_url": null,
-      "status": "no-snapshot",
-      "submitted_at": "2026-10-09T04:51:35Z"
-    },
-    {
-      "guid": "710142df-923e-4ad3-80d0-c7a87391fc3e",
-      "page_url": "https://abdlhub.com/?v=710142df-923e-4ad3-80d0-c7a87391fc3e",
-      "archived_url": "http://web.archive.org/web/20261009045141/https://abdlhub.com/?v=710142df-923e-4ad3-80d0-c7a87391fc3e",
-      "status": "ok",
-      "submitted_at": "2026-10-09T04:52:02Z"
-    },
-    {
-      "guid": "cbc1420c-cd65-4f92-b06c-73092650ab13",
-      "page_url": "https://abdlhub.com/?v=cbc1420c-cd65-4f92-b06c-73092650ab13",
-      "archived_url": null,
-      "status": "no-snapshot",
-      "submitted_at": "2026-10-09T04:52:30Z"
-    },
-    {
-      "guid": "c1904e3e-e123-4ddb-8830-b53a7c55a31e",
-      "page_url": "https://abdlhub.com/?v=c1904e3e-e123-4ddb-8830-b53a7c55a31e",
-      "archived_url": null,
-      "status": "no-snapshot",
-      "submitted_at": "2026-10-09T04:52:58Z"
-    },
-    {
-      "guid": "f64107b2-9919-4c19-99ce-115eaf90432a",
-      "page_url": "https://abdlhub.com/?v=f64107b2-9919-4c19-99ce-115eaf90432a",
-      "archived_url": "http://web.archive.org/web/20261009045304/https://abdlhub.com/?v=f64107b2-9919-4c19-99ce-115eaf90432a",
-      "status": "ok",
-      "submitted_at": "2026-10-09T04:53:22Z"
-    },
-    {
-      "guid": "02f46a22-2881-4dfa-a888-7f0dfbf3aefb",
-      "page_url": "https://abdlhub.com/?v=02f46a22-2881-4dfa-a888-7f0dfbf3aefb",
-      "archived_url": "http://web.archive.org/web/20261009045338/https://abdlhub.com/?v=02f46a22-2881-4dfa-a888-7f0dfbf3aefb",
-      "status": "ok",
-      "submitted_at": "2026-10-09T04:53:57Z"
-    },
-    {
-      "guid": "50e8212f-eec5-465a-a080-42f4e09fd7f6",
-      "page_url": "https://abdlhub.com/?v=50e8212f-eec5-465a-a080-42f4e09fd7f6",
-      "archived_url": "http://web.archive.org/web/20261009045403/https://abdlhub.com/?v=50e8212f-eec5-465a-a080-42f4e09fd7f6",
-      "status": "ok",
-      "submitted_at": "2026-10-09T04:54:22Z"
-    },
-    {
-      "guid": "26cf42e4-3fb8-44da-9822-7758b3a692fc",
-      "page_url": "https://abdlhub.com/?v=26cf42e4-3fb8-44da-9822-7758b3a692fc",
-      "archived_url": "http://web.archive.org/web/20261009045428/https://abdlhub.com/?v=26cf42e4-3fb8-44da-9822-7758b3a692fc",
-      "status": "ok",
-      "submitted_at": "2026-10-09T04:54:47Z"
+      "status": "ERR:ReadTimeout",
+      "submitted_at": "2026-10-09T20:16:32Z"
     },
     {
       "guid": "03bfd473-3c67-4bae-aee1-ee7120b6664c",
       "page_url": "https://abdlhub.com/?v=03bfd473-3c67-4bae-aee1-ee7120b6664c",
       "archived_url": null,
       "status": "no-snapshot",
-      "submitted_at": "2026-10-09T04:55:09Z"
+      "submitted_at": "2026-10-09T20:17:56Z"
+    },
+    {
+      "guid": "26cf42e4-3fb8-44da-9822-7758b3a692fc",
+      "page_url": "https://abdlhub.com/?v=26cf42e4-3fb8-44da-9822-7758b3a692fc",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:19:06Z"
+    },
+    {
+      "guid": "50e8212f-eec5-465a-a080-42f4e09fd7f6",
+      "page_url": "https://abdlhub.com/?v=50e8212f-eec5-465a-a080-42f4e09fd7f6",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:20:23Z"
+    },
+    {
+      "guid": "ad86a3df-be79-4629-ab1a-5fdd25249377",
+      "page_url": "https://abdlhub.com/?v=ad86a3df-be79-4629-ab1a-5fdd25249377",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:21:37Z"
+    },
+    {
+      "guid": "02f46a22-2881-4dfa-a888-7f0dfbf3aefb",
+      "page_url": "https://abdlhub.com/?v=02f46a22-2881-4dfa-a888-7f0dfbf3aefb",
+      "archived_url": "http://web.archive.org/web/20261009202234/https://abdlhub.com/?v=02f46a22-2881-4dfa-a888-7f0dfbf3aefb",
+      "status": "ok",
+      "submitted_at": "2026-10-09T20:22:59Z"
+    },
+    {
+      "guid": "f64107b2-9919-4c19-99ce-115eaf90432a",
+      "page_url": "https://abdlhub.com/?v=f64107b2-9919-4c19-99ce-115eaf90432a",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:24:39Z"
+    },
+    {
+      "guid": "c1904e3e-e123-4ddb-8830-b53a7c55a31e",
+      "page_url": "https://abdlhub.com/?v=c1904e3e-e123-4ddb-8830-b53a7c55a31e",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:26:01Z"
+    },
+    {
+      "guid": "cbc1420c-cd65-4f92-b06c-73092650ab13",
+      "page_url": "https://abdlhub.com/?v=cbc1420c-cd65-4f92-b06c-73092650ab13",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:27:25Z"
+    },
+    {
+      "guid": "710142df-923e-4ad3-80d0-c7a87391fc3e",
+      "page_url": "https://abdlhub.com/?v=710142df-923e-4ad3-80d0-c7a87391fc3e",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:28:41Z"
+    },
+    {
+      "guid": "39b63ca2-4e5a-406c-94bd-3fb72d55a879",
+      "page_url": "https://abdlhub.com/?v=39b63ca2-4e5a-406c-94bd-3fb72d55a879",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:30:16Z"
+    },
+    {
+      "guid": "4478076e-76ec-42d9-886b-a61ba179235a",
+      "page_url": "https://abdlhub.com/?v=4478076e-76ec-42d9-886b-a61ba179235a",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:31:33Z"
+    },
+    {
+      "guid": "9627aedf-d3d6-4a5a-8141-6467c764a33a",
+      "page_url": "https://abdlhub.com/?v=9627aedf-d3d6-4a5a-8141-6467c764a33a",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:32:49Z"
+    },
+    {
+      "guid": "8f71399f-5565-497a-944f-466ad42b0271",
+      "page_url": "https://abdlhub.com/?v=8f71399f-5565-497a-944f-466ad42b0271",
+      "archived_url": null,
+      "status": "no-snapshot",
+      "submitted_at": "2026-10-09T20:33:54Z"
     }
   ]
 }

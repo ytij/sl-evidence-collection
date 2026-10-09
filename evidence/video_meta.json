@@ -1,6 +1,6 @@
 {
   "name": "video_meta",
-  "fetched_at": "2026-10-09T04:22:45.300674+00:00",
+  "fetched_at": "2026-10-09T19:44:07.226391+00:00",
   "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/video_meta?select=guid,description,tags,category,series_name,episode&order=guid&limit=1000&offset=2000",
   "row_count": 2988,
   "rows": [
