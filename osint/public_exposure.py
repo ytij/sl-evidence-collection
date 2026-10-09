@@ -228,6 +228,9 @@ def write_markdown(out):
              "Bunny zone, `abdlhub-images.b-cdn.net`).")
     L.append("- **Discord** invite in the page header (currently expired).")
     L.append("")
+    L.append("**Navigate:** [REPO_MAP](../REPO_MAP.md) · [HANDOVER](../HANDOVER.md) · "
+             "[SITE_CATALOG](SITE_CATALOG.md) · [SUBPOENA_TARGETS](SUBPOENA_TARGETS.md)")
+    L.append("")
     with open(MD_OUT, "w", encoding="utf-8") as fh:
         fh.write("\n".join(L))
 

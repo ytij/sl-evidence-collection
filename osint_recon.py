@@ -389,7 +389,10 @@ def write_markdown(report):
     lines.append("- **See also:** `osint/PUBLIC_EXPOSURE.md` for the uploader-attribution and "
                  "public-data-exposure review (read-only via the published anon key).")
     lines.append("")
-    lines.append("_Raw evidence: `osint/site_catalog.json`._")
+    lines.append("_Raw evidence: [`site_catalog.json`](site_catalog.json)._")
+    lines.append("")
+    lines.append("**Navigate:** [REPO_MAP](../REPO_MAP.md) · [HANDOVER](../HANDOVER.md) · "
+                 "[PUBLIC_EXPOSURE](PUBLIC_EXPOSURE.md) · [SUBPOENA_TARGETS](SUBPOENA_TARGETS.md)")
     lines.append("")
     with open(os.path.join(OUT_DIR, "SITE_CATALOG.md"), "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines))

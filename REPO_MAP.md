@@ -16,6 +16,7 @@ Links are relative to the repo root. Generated/derived files are marked ⟳.
 | [`AGENTS.md`](AGENTS.md) | Non-negotiable rules + common commands (auto-loaded by agents). |
 | [`TODO.md`](TODO.md) | Live prioritised plan and status. |
 | [`THUMBNAIL_PRESERVATION.md`](THUMBNAIL_PRESERVATION.md) | Stealth analysis + rollout for the 610 orphaned thumbnails. |
+| [`JFF_MATCHING.md`](JFF_MATCHING.md) | Analysis + plan for JFF↔abdlhub matching and Notion integration. |
 | [`REPO_MAP.md`](REPO_MAP.md) | This file. |
 
 ## 2. Root tools (what collects/generates)
@@ -33,6 +34,7 @@ Links are relative to the repo root. Generated/derived files are marked ⟳.
 | [`damages.py`](damages.py) | Aggregates damages inputs + § 504(c) matrix. | `python damages.py` |
 | [`match.py`](match.py) | Matches JFF originals ↔ rehosts (duration/title/pHash). | `python match.py --originals <jff>` |
 | [`build_legal.py`](build_legal.py) | Generates `legal/EXHIBIT_INDEX.md`, preservation letters, exhibit shells. | `python build_legal.py` |
+| [`notion_export.py`](notion_export.py) | Builds the Notion-import CSV from our data + the client's manual sheet. | `python notion_export.py` |
 | [`package.py`](package.py) | Assembles the lawyer bundle → `case_package/`. | `python package.py --include-media --zip` |
 | [`run_tests.py`](run_tests.py) | Runs the validation suite. | `python run_tests.py` |
 
@@ -137,3 +139,16 @@ Regenerate with [`package.py`](package.py). Not edited by hand.
 - `damages/*` → [`damages.py`](damages.py)
 - `legal/EXHIBIT_INDEX.md`, `legal/exhibits/`, `legal/preservation/` → [`build_legal.py`](build_legal.py)
 - `case_package/*` → [`package.py`](package.py)
+
+## 13. `manual/` — client-provided inputs
+| File | What it is |
+| --- | --- |
+| [`manual/abdlhub_stolen_videos_manual.csv`](manual/abdlhub_stolen_videos_manual.csv) | Client's manual sheet: abdlhub title → JFF Video ID (+ fingerprint flag, screenshot, line #). |
+| [`manual/abdlhub_stolen_videos_manual_all.csv`](manual/abdlhub_stolen_videos_manual_all.csv) | Same 74 rows, reordered (not a superset). |
+
+## 14. `notion/` — Notion import
+| File | What it is |
+| --- | --- |
+| [`notion/abdlhub_stolen_videos.csv`](notion/abdlhub_stolen_videos.csv) ⟳ | Union of both datasets (698 rows) in a Notion-import schema. |
+| [`notion/NOTION_SCHEMA.md`](notion/NOTION_SCHEMA.md) ⟳ | Property types + import steps. |
+| [`notion_export.py`](notion_export.py) | Generator for the above; see [`JFF_MATCHING.md`](JFF_MATCHING.md) §3. |

@@ -164,6 +164,10 @@ damages.py              damages inputs & §504(c) matrix -> damages/
 match.py                JFF originals <-> rehosts matcher -> matches/
 package.py              lawyer-ready bundle -> case_package/ (+ zip)
 build_legal.py          generates legal/EXHIBIT_INDEX.md + preservation letters
+notion_export.py        builds the Notion-import CSV from our data + client sheet
+JFF_MATCHING.md         analysis + plan for JFF<->abdlhub matching / Notion
+manual/                 client's manual sheet (abdlhub title -> JFF Video ID)
+notion/                 Notion-import CSV + schema (generated)
 legal/                  METHODOLOGY, DECLARATION_1746, SUBPOENA_512h, COMPLAINT,
                         EXHIBIT_INDEX, AUTHORITIES, authorities.json,
                         preservation/, exhibits/

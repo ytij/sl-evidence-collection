@@ -207,4 +207,6 @@ Auth settings (public `/auth/v1/settings`): email provider enabled, signup enabl
 - **Monetisation:** ExoClick banner + popunder + VAST pre-roll, all client-side; none of it gates the underlying media URL.
 - **See also:** `osint/PUBLIC_EXPOSURE.md` for the uploader-attribution and public-data-exposure review (read-only via the published anon key).
 
-_Raw evidence: `osint/site_catalog.json`._
+_Raw evidence: [`site_catalog.json`](site_catalog.json)._
+
+**Navigate:** [REPO_MAP](../REPO_MAP.md) · [HANDOVER](../HANDOVER.md) · [PUBLIC_EXPOSURE](PUBLIC_EXPOSURE.md) · [SUBPOENA_TARGETS](SUBPOENA_TARGETS.md)

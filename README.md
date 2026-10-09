@@ -19,6 +19,7 @@ damages, and assembles lawyer-ready drafts and takedowns.
 | Find any file in the repo | [`REPO_MAP.md`](REPO_MAP.md) |
 | Understand the preservation approach | [`THUMBNAIL_PRESERVATION.md`](THUMBNAIL_PRESERVATION.md) |
 | See the key findings | [`osint/PUBLIC_EXPOSURE.md`](osint/PUBLIC_EXPOSURE.md) |
+| Plan the JFF↔Notion matching | [`JFF_MATCHING.md`](JFF_MATCHING.md) |
 | Read the court-facing drafts | [`legal/COMPLAINT.md`](legal/COMPLAINT.md), [`legal/DECLARATION_1746.md`](legal/DECLARATION_1746.md) |
 
 ## Quickstart
@@ -39,6 +40,8 @@ python run_tests.py                    # 71 integrity / validation checks
 | [`takedowns/`](takedowns/) | Infringing-work index + DMCA § 512(c) notices |
 | [`damages/`](damages/) | Work count, bytes, views + § 504(c) statutory matrix |
 | [`legal/`](legal/) | Authorities, methodology, declaration, subpoena package, complaint, exhibits |
+| [`manual/`](manual/) | Client's manual sheet (abdlhub title → JFF Video ID) |
+| [`notion/`](notion/) | Notion-import CSV + schema |
 | [`tests/`](tests/) | Validation suite (`run_tests.py`) |
 | [`case_package/`](case_package/) | Generated lawyer-ready bundle (mirror of the deliverables) |
 | `.cache/` (gitignored) | Source/probe caches — keep re-runs at ~0 requests |
