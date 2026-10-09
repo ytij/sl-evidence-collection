@@ -10,9 +10,15 @@ used, no data is written, no action endpoint is invoked, and no partner
 infrastructure is tested. It documents what the operator exposes about the
 rehosting operation.
 
+Every table pulled is also persisted verbatim into ``evidence/`` with a
+SHA-256 manifest (see ``evidence_store.py``) so the raw rows — comments in
+particular — are retained in-repo as evidence.
+
 Outputs:
-    osint/public_exposure.json
-    osint/PUBLIC_EXPOSURE.md
+    evidence/<table>.json        raw rows + provenance (tracked in git)
+    evidence/manifest.json       hashes / timestamps / row counts
+    osint/public_exposure.json   structured findings
+    osint/PUBLIC_EXPOSURE.md     curated report
 
 Usage:
     python osint/public_exposure.py
@@ -23,14 +29,17 @@ import json
 import os
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from sophie_scrape import SUPA, SUPA_KEY, HostRateLimiter, PoliteSession
+from evidence_store import EvidenceStore
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LIVE_CSV = os.path.join(os.path.dirname(HERE), "sophie_little_live_videos.csv")
+ROOT = os.path.dirname(HERE)
+EVIDENCE_DIR = os.path.join(ROOT, "evidence")
+LIVE_CSV = os.path.join(ROOT, "sophie_little_live_videos.csv")
 JSON_OUT = os.path.join(HERE, "public_exposure.json")
 MD_OUT = os.path.join(HERE, "PUBLIC_EXPOSURE.md")
 
@@ -38,23 +47,27 @@ CREATOR_TITLE = re.compile(r"sofia", re.I)
 SECRET_HINTS = re.compile(r"key|secret|token|password|passwd|pwd|bearer|access_key|service_role|api", re.I)
 LINK_HINTS = re.compile(r"https?://\S+|www\.\S+|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+|reddit\S*|thisvid\S*|twitter\S*|instagram\S*|onlyfans\S*", re.I)
 TAKEDOWN_HINTS = re.compile(r"takedown|take down|remove|copyright|dmca|lawyer|legal|sue|report", re.I)
+RLS_PROTECTED = ["favorites", "watch_history", "video_reports", "model_requests", "title_suggestions"]
 
 
 def supa_get(session, path):
-    r = session.get(f"{SUPA}/rest/v1/{path}",
-                    headers={"apikey": SUPA_KEY, "Authorization": f"Bearer {SUPA_KEY}",
-                             "Accept": "application/json"})
-    return r.json() if r.status_code == 200 else []
+    url = f"{SUPA}/rest/v1/{path}"
+    r = session.get(url, headers={"apikey": SUPA_KEY, "Authorization": f"Bearer {SUPA_KEY}",
+                                  "Accept": "application/json"})
+    return (r.json() if r.status_code == 200 else []), url
 
 
-def fetch_all(session, table, select="*", order="id", limit=1000):
-    rows, offset = [], 0
+def fetch_all(session, store, name, select="*", order="id", limit=1000,
+              note="", sanitize_data=False):
+    rows, offset, last_url = [], 0, ""
     while True:
-        batch = supa_get(session, f"{table}?select={select}&order={order}&limit={limit}&offset={offset}")
+        batch, last_url = supa_get(session, f"{name}?select={select}&order={order}&limit={limit}&offset={offset}")
         rows.extend(batch)
         if len(batch) < limit:
-            return rows
+            break
         offset += limit
+    store.save(name, rows, url=last_url, note=note, sanitize_data=sanitize_data)
+    return rows
 
 
 def redact(value):
@@ -67,17 +80,19 @@ def redact(value):
 def main():
     limiter = HostRateLimiter(base_interval=0.6, jitter=1.0, long_every=25)
     session = PoliteSession(limiter)
+    store = EvidenceStore(EVIDENCE_DIR)
     out = {"scope": "public anon-key read; no bypass, no privileged keys, no writes"}
 
-    # ---- site_config: secret scan ----
-    cfg = supa_get(session, "site_config?select=key,value&order=key")
+    # ---- site_config (settings sanitized: base64 model images hashed) ----
+    cfg, cfg_url = supa_get(session, "site_config?select=key,value&order=key")
+    store.save("site_config", cfg, url=cfg_url,
+               note="settings value sanitized (inline base64 model images replaced by sha256)",
+               sanitize_data=True)
     out["site_config_keys"] = {row["key"]: redact(row["value"]) for row in cfg}
-    out["site_config_secret_flags"] = [
-        row["key"] for row in cfg if SECRET_HINTS.search(row["key"])
-    ]
+    out["site_config_secret_flags"] = [row["key"] for row in cfg if SECRET_HINTS.search(row["key"])]
 
     # ---- profiles ----
-    prof = fetch_all(session, "user_profiles",
+    prof = fetch_all(session, store, "user_profiles",
                      "user_id,username,is_admin,is_mod,supporter_tier,created_at,public_profile",
                      order="created_at")
     by_id = {p["user_id"]: p for p in prof}
@@ -89,7 +104,7 @@ def main():
     ]
 
     # ---- submissions: timeline + attribution ----
-    subs = fetch_all(session, "video_submissions",
+    subs = fetch_all(session, store, "video_submissions",
                      "id,user_id,title,status,category,description,video_url,created_at,file_size",
                      order="id")
     out["submission_count"] = len(subs)
@@ -129,19 +144,25 @@ def main():
         (a["username"], a["user_id"]) for a in attribution
     ).most_common()
 
-    # ---- comments: takedown / links ----
-    comments = fetch_all(session, "comments", "name,user_id,body,created_at", order="created_at")
+    # ---- comments (persisted in full) ----
+    comments = fetch_all(session, store, "comments", "name,user_id,body,created_at", order="created_at")
     out["comment_count"] = len(comments)
     out["takedown_comments"] = [
         {"name": c["name"], "created_at": c["created_at"], "body": c["body"]}
         for c in comments if TAKEDOWN_HINTS.search(str(c.get("body") or ""))
     ]
 
+    # ---- poll_votes + RLS-protected tables (recorded as negative evidence) ----
+    fetch_all(session, store, "poll_votes", "*", order="created_at")
+    for t in RLS_PROTECTED:
+        rows, url = supa_get(session, f"{t}?select=*&limit=1000")
+        store.save(t, rows, url=url, note="RLS-protected: no rows visible to the anon key")
+
     with open(JSON_OUT, "w", encoding="utf-8") as fh:
         json.dump(out, fh, indent=2)
     write_markdown(out)
     session.save_cookies()
-    sys.stderr.write(f"\nWrote {JSON_OUT} and {MD_OUT} ({session.count} requests)\n")
+    sys.stderr.write(f"\nWrote {JSON_OUT}, {MD_OUT}, and evidence/ ({session.count} requests)\n")
 
 
 def write_markdown(out):
@@ -149,14 +170,15 @@ def write_markdown(out):
     L.append("# ABDL-HUB — public exposure & attribution")
     L.append("")
     L.append("_Read-only via the site's own published anon key. No authentication was "
-             "bypassed, no privileged key used, nothing written, no action endpoint invoked._")
+             "bypassed, no privileged key used, nothing written, no action endpoint invoked. "
+             "Raw rows for every table are persisted under `evidence/` (see `evidence/manifest.json`)._")
     L.append("")
     L.append("## 1. What the backend exposes publicly")
     L.append("")
     L.append(f"- **{out['profile_count']} user profiles** (usernames, admin/mod flags, supporter tier, signup date).")
     L.append(f"- **{out['submission_count']} video submissions** — each with the **uploader's `user_id`**, "
              "title, description, file size, timestamp and the Bunny Stream embed URL.")
-    L.append(f"- **{out['comment_count']} comments** with author names.")
+    L.append(f"- **{out['comment_count']} comments** with author names (full text cached in `evidence/comments.json`).")
     L.append("- `site_config` (settings, polls, donation address).")
     L.append("")
     L.append("Properly protected (RLS returns no rows to the anon key): `favorites`, "

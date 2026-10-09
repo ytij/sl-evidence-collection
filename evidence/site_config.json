@@ -1,0 +1,191 @@
+{
+  "name": "site_config",
+  "fetched_at": "2026-10-09T04:22:52.304384+00:00",
+  "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/site_config?select=key,value&order=key",
+  "row_count": 3,
+  "rows": [
+    {
+      "key": "poll_votes",
+      "value": {
+        "poll_1789740644176_490": {
+          "46a556ca-1789-4dd9-a72d-bbe6df94e5c9": 0
+        }
+      }
+    },
+    {
+      "key": "polls",
+      "value": [
+        {
+          "id": "poll_1789740644176_490",
+          "active": true,
+          "options": [
+            "Stable and Bug fixes",
+            "more videos",
+            "new models",
+            "ad fixes (reduced)"
+          ],
+          "question": "Which should the site improve on?"
+        }
+      ]
+    },
+    {
+      "key": "settings",
+      "value": {
+        "poll": null,
+        "libId": "621930",
+        "polls": [],
+        "banner": "",
+        "donate": [
+          {
+            "icon": "",
+            "type": "address",
+            "label": "Bitcoin",
+            "value": "bc1qmw0zehsntqj0ckwsw4mm44flhcqm7tvzu0xu4h"
+          }
+        ],
+        "models": [
+          {
+            "img": {
+              "_redacted": "base64-blob",
+              "sha256": "afcd189af851526cbfab82ba9b956dbad274313681a48e5877807465de65078f",
+              "bytes": 611340,
+              "prefix": "data:image/jpeg;base64,/9j/4QFAR"
+            },
+            "name": "LittleDiaperIdol"
+          },
+          {
+            "img": {
+              "_redacted": "base64-blob",
+              "sha256": "1a999048605ac806b16e15e1aeb24849bd38b29b464590a97424b429c0ba1bd3",
+              "bytes": 164632,
+              "prefix": "data:image/jpeg;base64,/9j/4AAQS"
+            },
+            "name": "Ella Raine ABDL"
+          },
+          {
+            "img": {
+              "_redacted": "base64-blob",
+              "sha256": "2b54ab0a0e521c92f172be25e6bfd762be3f2dcf6c2b06afcfe129677a013786",
+              "bytes": 685144,
+              "prefix": "data:image/jpeg;base64,/9j/4QFAR"
+            },
+            "name": "Odette Delacroix"
+          },
+          {
+            "img": {
+              "_redacted": "base64-blob",
+              "sha256": "c97a8d3bfe7bbd8ca670314cc6bd412b05a9105dbd61c463bc171a53528071b7",
+              "bytes": 1468468,
+              "prefix": "data:image/jpeg;base64,/9j/4QFAR"
+            },
+            "name": "Blaire Monet"
+          },
+          {
+            "img": {
+              "_redacted": "base64-blob",
+              "sha256": "6e28cb947d90e6a427f32846f34cab503d14a4edc6c64eb937191d7c86833473",
+              "bytes": 343676,
+              "prefix": "data:image/png;base64,iVBORw0KGg"
+            },
+            "name": "Littlestdarling"
+          },
+          {
+            "img": {
+              "_redacted": "base64-blob",
+              "sha256": "3afec5138f6dc2f4c2205242d0885851daed9bfac3c31039e7d3bf418112062b",
+              "bytes": 754672,
+              "prefix": "data:image/png;base64,iVBORw0KGg"
+            },
+            "name": "Sophie Little"
+          },
+          {
+            "img": {
+              "_redacted": "base64-blob",
+              "sha256": "d4e3db491ca9803410543c2f14165039b9ab303063633413a996f2e8158afbcf",
+              "bytes": 602132,
+              "prefix": "data:image/jpeg;base64,/9j/4QFAR"
+            },
+            "name": "Blackrasbaby"
+          },
+          {
+            "img": {
+              "_redacted": "base64-blob",
+              "sha256": "c9932b0c47dc59dc5affe943e801e4475df809b185ad905723332c13956022c7",
+              "bytes": 1409504,
+              "prefix": "data:image/png;base64,iVBORw0KGg"
+            },
+            "name": "Emmy-in-dipees"
+          },
+          {
+            "img": {
+              "_redacted": "base64-blob",
+              "sha256": "9625530ea5d3d3e02497bdf938bd18e0574a1211ae533a88ec66bd1dcb3b255c",
+              "bytes": 706740,
+              "prefix": "data:image/jpeg;base64,/9j/4QFAR"
+            },
+            "name": "AllyCabdl"
+          }
+        ],
+        "perPage": 200,
+        "sponsor": {
+          "alt": "AbdlMatch.com",
+          "img": "https://abdlhub-images.b-cdn.net/728X90-ABDL3.gif",
+          "link": "https://abdlmatch.com",
+          "enabled": true
+        },
+        "fundGoal": {
+          "goal": 115,
+          "label": "This months goal for site cost",
+          "raised": 80,
+          "reward": "2 new models (surprise 😜🫢)",
+          "enabled": true,
+          "showHome": true
+        },
+        "pullZone": "vz-e81debcf-c73.b-cdn.net",
+        "siteName": "ABDL-HUB",
+        "gateZone2": "",
+        "adsEnabled": true,
+        "categories": [
+          {
+            "img": "",
+            "name": "Public"
+          },
+          {
+            "img": "",
+            "name": "Messy"
+          },
+          {
+            "img": "",
+            "name": "Diaper girl"
+          },
+          {
+            "img": "",
+            "name": "Diaper boy"
+          },
+          {
+            "img": "",
+            "name": "Mommy"
+          },
+          {
+            "img": "",
+            "name": "Daddy"
+          }
+        ],
+        "gateZoneId": "6011096",
+        "storageCdn": "",
+        "themeColor": "",
+        "accentColor": "#ff00ff",
+        "analyticsId": "",
+        "modalZoneId": "6012920",
+        "storageZone": "",
+        "adGapMinutes": 0,
+        "analyticsSrc": "",
+        "featuredGuid": "",
+        "stickyZoneId": "6012920",
+        "featuredLabel": "Elijahwalker is first donator!!!",
+        "particleColor": "",
+        "gateGapMinutes": 0
+      }
+    }
+  ]
+}

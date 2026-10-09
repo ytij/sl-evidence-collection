@@ -1,12 +1,12 @@
 # ABDL-HUB — public exposure & attribution
 
-_Read-only via the site's own published anon key. No authentication was bypassed, no privileged key used, nothing written, no action endpoint invoked._
+_Read-only via the site's own published anon key. No authentication was bypassed, no privileged key used, nothing written, no action endpoint invoked. Raw rows for every table are persisted under `evidence/` (see `evidence/manifest.json`)._
 
 ## 1. What the backend exposes publicly
 
 - **364 user profiles** (usernames, admin/mod flags, supporter tier, signup date).
 - **83 video submissions** — each with the **uploader's `user_id`**, title, description, file size, timestamp and the Bunny Stream embed URL.
-- **93 comments** with author names.
+- **93 comments** with author names (full text cached in `evidence/comments.json`).
 - `site_config` (settings, polls, donation address).
 
 Properly protected (RLS returns no rows to the anon key): `favorites`, `watch_history`, `video_reports`, `model_requests`, `title_suggestions`. The Supabase admin API (`/auth/v1/admin/*`) is not exposed — it needs the service key, which is not present anywhere in the client.

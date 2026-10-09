@@ -1,0 +1,253 @@
+{
+  "name": "poll_votes",
+  "fetched_at": "2026-10-09T04:22:54.727930+00:00",
+  "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/poll_votes?select=*&order=created_at&limit=1000&offset=0",
+  "row_count": 35,
+  "rows": [
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "46a556ca-1789-4dd9-a72d-bbe6df94e5c9",
+      "choice": 0,
+      "username": "Admin",
+      "created_at": "2026-09-02T18:05:42.398872+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "ab4555a0-0fb2-461f-a1b9-8b018349a74a",
+      "choice": 1,
+      "username": "lil_ming",
+      "created_at": "2026-09-02T18:47:47.488824+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "6121d0bd-8fdb-4e77-a211-8285a9ff9eb8",
+      "choice": 0,
+      "username": "Nicktheking",
+      "created_at": "2026-09-02T19:25:27.808894+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "624744f9-38cd-4af3-b4ac-07b8e41cb003",
+      "choice": 1,
+      "username": "jsam79370",
+      "created_at": "2026-09-02T20:47:34.665508+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "ee31c416-97ea-4e8d-9a17-bb3fb1dc08ef",
+      "choice": 1,
+      "username": "rafapanosnadal",
+      "created_at": "2026-09-02T20:49:45.787063+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "63b93baa-f630-42fa-8bf5-9ce13bd8afaa",
+      "choice": 2,
+      "username": "samsampson",
+      "created_at": "2026-09-02T20:56:08.013896+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "6bf0d566-8d07-488b-9f25-042cb34b5efb",
+      "choice": 0,
+      "username": "Karim72",
+      "created_at": "2026-09-02T21:03:35.576388+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "041aba4f-de88-44b1-a520-bf68973ef24e",
+      "choice": 1,
+      "username": "gamerman3140",
+      "created_at": "2026-09-02T21:17:11.400518+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "9f833738-28a4-4df5-9fe4-e2df14a94957",
+      "choice": 1,
+      "username": "spunes",
+      "created_at": "2026-09-02T21:29:44.11799+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "90cdda79-ac72-4f5c-be6c-dc9ef631aedd",
+      "choice": 1,
+      "username": "sidyyyabdl",
+      "created_at": "2026-09-02T21:34:07.477771+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "46a556ca-1789-4dd9-a72d-bbe6df94e5c9",
+      "choice": 0,
+      "username": "Admin",
+      "created_at": "2026-09-02T22:02:14.904838+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "ef5994f6-d371-4827-b86e-a644930431dd",
+      "choice": 0,
+      "username": "favsf",
+      "created_at": "2026-09-02T23:38:47.955958+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "a5cd4f13-841c-4c53-86fb-916164861681",
+      "choice": 2,
+      "username": "ContaSecup",
+      "created_at": "2026-09-03T00:15:06.984052+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "20bb5396-846c-4001-869c-9d89bc10ac13",
+      "choice": 1,
+      "username": "curry",
+      "created_at": "2026-09-03T00:27:33.780486+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "826733ea-ecd4-4371-8fd5-7a0f78a4e519",
+      "choice": 2,
+      "username": "JABKO222333",
+      "created_at": "2026-09-03T03:11:44.146048+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "f0336462-78a8-4fcc-964b-d9796d7c1bd1",
+      "choice": 0,
+      "username": "Masterking90",
+      "created_at": "2026-09-03T04:38:26.68086+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "ea33c3c1-44d7-40fe-8954-6b426cdc05e4",
+      "choice": 0,
+      "username": "Collesworld",
+      "created_at": "2026-09-03T06:12:04.136878+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "9f4cdbef-f1cc-4662-94e5-7e09dcf63c30",
+      "choice": 0,
+      "username": "pacman1765",
+      "created_at": "2026-09-03T06:49:48.936232+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "ad5e3f3f-cbc8-4b06-9630-2657982eff69",
+      "choice": 1,
+      "username": "underwearhere",
+      "created_at": "2026-09-03T08:30:50.723617+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added-",
+      "user_id": "608dada3-26d0-4962-ba3b-846b5ee5df9e",
+      "choice": 1,
+      "username": "Imuzu",
+      "created_at": "2026-09-03T08:39:09.154937+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "4780b724-df49-4606-a1a1-5e4ddeb47531",
+      "choice": 1,
+      "username": "bonkob",
+      "created_at": "2026-09-03T09:20:27.440265+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "2ceacd63-c701-4c56-bf96-a55e0b052d3e",
+      "choice": 0,
+      "username": "sfabdl",
+      "created_at": "2026-09-03T10:58:40.571703+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "608dada3-26d0-4962-ba3b-846b5ee5df9e",
+      "choice": 1,
+      "username": "Imuzu",
+      "created_at": "2026-09-03T13:12:29.049665+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "041aba4f-de88-44b1-a520-bf68973ef24e",
+      "choice": 0,
+      "username": "gamerman3140",
+      "created_at": "2026-09-03T13:15:31.58793+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "f43f6324-edab-4e09-9a8f-96798c0baece",
+      "choice": 1,
+      "username": "dafiwa4595",
+      "created_at": "2026-09-03T13:19:17.26952+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "f15662f5-c0af-417d-80f4-757f7ff5d5da",
+      "choice": 1,
+      "username": "ahmeddiapered",
+      "created_at": "2026-09-03T13:20:57.731925+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "df661221-9a5f-426a-9231-f8297c380539",
+      "choice": 1,
+      "username": "brb9833",
+      "created_at": "2026-09-03T13:22:16.61074+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "68637487-eb7b-4a19-8dbd-01dbefca5ef3",
+      "choice": 1,
+      "username": "Waginop",
+      "created_at": "2026-09-03T13:23:31.802049+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "60be4fa7-d44c-4265-adf9-1693b6519843",
+      "choice": 2,
+      "username": "johnsnow902",
+      "created_at": "2026-09-03T13:23:40.742975+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "8fc86941-86ff-41a9-8edc-03927df31b70",
+      "choice": 1,
+      "username": "bamome2898",
+      "created_at": "2026-09-03T13:25:25.304707+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "d0c4b4f9-0141-47a5-b1ec-7b3b011c59c2",
+      "choice": 1,
+      "username": "DiaperLover99",
+      "created_at": "2026-09-03T13:26:43.689042+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "e2a03bd4-f0c4-41ce-815e-c6e2fb41dd4b",
+      "choice": 1,
+      "username": "SusanABDL",
+      "created_at": "2026-09-03T13:28:52.802161+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "ac7b025a-1fd2-43f8-a301-27de636ea1f7",
+      "choice": 1,
+      "username": "dprbby65",
+      "created_at": "2026-09-03T13:30:24.329403+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "f3dbadd0-a21e-4540-8267-f9746a795276",
+      "choice": 0,
+      "username": "DiaperDemon666",
+      "created_at": "2026-09-03T13:47:07.610962+00:00"
+    },
+    {
+      "poll_id": "who-should-the-next-model-videos-should-be-added",
+      "user_id": "6e93ce86-ff48-4a79-862a-5c7d99a92b72",
+      "choice": 0,
+      "username": "Peppelane",
+      "created_at": "2026-09-03T15:49:53.721539+00:00"
+    }
+  ]
+}

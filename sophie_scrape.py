@@ -54,6 +54,8 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+from evidence_store import EvidenceStore
+
 SITE = "https://abdlhub.com"
 SUPA = "https://hbvwlzjxsmhreeqwypwp.supabase.co"
 SUPA_KEY = (
@@ -75,6 +77,7 @@ REQUEST_TIMEOUT = 60
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(HERE, ".cache")
+EVIDENCE_DIR = os.path.join(HERE, "evidence")
 COOKIE_PATH = os.path.join(CACHE_DIR, "cookies.json")
 
 DEFAULT_TAG = "Sophie Little"
@@ -282,7 +285,7 @@ def supa_headers():
     }
 
 
-def fetch_all_meta(session, cache, ttl, refresh):
+def fetch_all_meta(session, cache, ttl, refresh, store=None):
     """Every row of video_meta (guid, tags, category, series, episode)."""
     entry = cache.get("video_meta")
     if entry and not refresh and age_seconds(entry.get("fetched_at")) < ttl:
@@ -291,12 +294,14 @@ def fetch_all_meta(session, cache, ttl, refresh):
 
     rows = []
     offset = 0
+    last_url = ""
     select = "guid,description,tags,category,series_name,episode"
     while True:
         url = (
             f"{SUPA}/rest/v1/video_meta?select={select}"
             f"&order=guid&limit={PAGE_SIZE}&offset={offset}"
         )
+        last_url = url
         r = session.get(url, headers=supa_headers(), referer=SITE + "/")
         r.raise_for_status()
         batch = r.json()
@@ -305,11 +310,13 @@ def fetch_all_meta(session, cache, ttl, refresh):
             break
         offset += PAGE_SIZE
     cache.set("video_meta", {"fetched_at": now_iso(), "rows": rows})
+    if store is not None:
+        store.save("video_meta", rows, url=last_url, note="Supabase video_meta full table")
     sys.stderr.write(f"  video_meta: fetched {len(rows)} rows\n")
     return rows
 
 
-def fetch_catalog(session, cache, ttl, refresh, incremental=True):
+def fetch_catalog(session, cache, ttl, refresh, incremental=True, store=None):
     """{guid: bunny_item} for the entire Bunny Stream library."""
     entry = cache.get("catalog")
     fresh = entry and not refresh and age_seconds(entry.get("fetched_at")) < ttl
@@ -351,6 +358,9 @@ def fetch_catalog(session, cache, ttl, refresh, incremental=True):
             break
         page += 1
     cache.set("catalog", {"fetched_at": now_iso(), "items": items, "total_items": total})
+    if store is not None:
+        store.save("bunny_catalog", list(items.values()), url=BUNNY_FN,
+                   note="Bunny Stream library 621930 catalog")
     sys.stderr.write(f"  catalog: fetched {len(items)} items\n")
     return items
 
@@ -555,6 +565,7 @@ def main():
     session = PoliteSession(limiter, args.max_requests)
     meta_cache = JsonCache(os.path.join(CACHE_DIR, "sources.json"))
     probe_cache = JsonCache(os.path.join(CACHE_DIR, "probes.json"))
+    evidence = EvidenceStore(EVIDENCE_DIR)
     started = time.time()
 
     warm = meta_cache.get("warmup")
@@ -567,10 +578,10 @@ def main():
         probe_cache.save()
 
     sys.stderr.write("Fetching tag metadata (Supabase)...\n")
-    meta_rows = fetch_all_meta(session, meta_cache, args.cache_ttl * 3600, args.refresh)
+    meta_rows = fetch_all_meta(session, meta_cache, args.cache_ttl * 3600, args.refresh, evidence)
 
     sys.stderr.write("Fetching video catalog (Bunny Stream)...\n")
-    catalog = fetch_catalog(session, meta_cache, args.cache_ttl * 3600, args.refresh)
+    catalog = fetch_catalog(session, meta_cache, args.cache_ttl * 3600, args.refresh, store=evidence)
     meta_cache.save()
 
     rows = build_rows(meta_rows, catalog, args.tag, args.match, args.title, args.exclude)

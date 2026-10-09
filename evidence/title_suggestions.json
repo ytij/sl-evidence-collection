@@ -1,0 +1,7 @@
+{
+  "name": "title_suggestions",
+  "fetched_at": "2026-10-09T04:22:59.486159+00:00",
+  "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/title_suggestions?select=*&limit=1000",
+  "row_count": 0,
+  "rows": []
+}

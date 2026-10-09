@@ -1,0 +1,234 @@
+{
+  "created_at": "2026-10-09T04:22:43.168396+00:00",
+  "tables": {
+    "video_meta": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:45.300674+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/video_meta?select=guid,description,tags,category,series_name,episode&order=guid&limit=1000&offset=2000",
+          "row_count": 2988,
+          "sha256": "64a75b8187b6e3d7244a2c611a4469462d281602a36071e66d764d10711e3603",
+          "note": "Supabase video_meta full table"
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:45.300674+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/video_meta?select=guid,description,tags,category,series_name,episode&order=guid&limit=1000&offset=2000",
+        "row_count": 2988,
+        "sha256": "64a75b8187b6e3d7244a2c611a4469462d281602a36071e66d764d10711e3603",
+        "note": "Supabase video_meta full table",
+        "file": "video_meta.json"
+      }
+    },
+    "bunny_catalog": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:50.635937+00:00",
+          "source_url": "https://abdlhub.com/.netlify/functions/bunny-videos",
+          "row_count": 3215,
+          "sha256": "4d8db8685fdb5282c8ed9e5471d1593174efb507b19cc71963975b7415a4e090",
+          "note": "Bunny Stream library 621930 catalog"
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:50.635937+00:00",
+        "source_url": "https://abdlhub.com/.netlify/functions/bunny-videos",
+        "row_count": 3215,
+        "sha256": "4d8db8685fdb5282c8ed9e5471d1593174efb507b19cc71963975b7415a4e090",
+        "note": "Bunny Stream library 621930 catalog",
+        "file": "bunny_catalog.json"
+      }
+    },
+    "site_config": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:52.304384+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/site_config?select=key,value&order=key",
+          "row_count": 3,
+          "sha256": "422dbee7433c564b03d42145f2c7ef0d543c9c4823e30eced855ff8cb6632f90",
+          "note": "settings value sanitized (inline base64 model images replaced by sha256)"
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:52.304384+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/site_config?select=key,value&order=key",
+        "row_count": 3,
+        "sha256": "422dbee7433c564b03d42145f2c7ef0d543c9c4823e30eced855ff8cb6632f90",
+        "note": "settings value sanitized (inline base64 model images replaced by sha256)",
+        "file": "site_config.json"
+      }
+    },
+    "user_profiles": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:52.423652+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/user_profiles?select=user_id,username,is_admin,is_mod,supporter_tier,created_at,public_profile&order=created_at&limit=1000&offset=0",
+          "row_count": 364,
+          "sha256": "096d5bc3c6810e094d1db82c0c733c1e8148919f49feaed7f44a4eadd0b0a720",
+          "note": ""
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:52.423652+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/user_profiles?select=user_id,username,is_admin,is_mod,supporter_tier,created_at,public_profile&order=created_at&limit=1000&offset=0",
+        "row_count": 364,
+        "sha256": "096d5bc3c6810e094d1db82c0c733c1e8148919f49feaed7f44a4eadd0b0a720",
+        "note": "",
+        "file": "user_profiles.json"
+      }
+    },
+    "video_submissions": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:53.066477+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/video_submissions?select=id,user_id,title,status,category,description,video_url,created_at,file_size&order=id&limit=1000&offset=0",
+          "row_count": 83,
+          "sha256": "0008bf8505038d050dd905f36fc7fec188a696fce6c326c3ae59defe712a649c",
+          "note": ""
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:53.066477+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/video_submissions?select=id,user_id,title,status,category,description,video_url,created_at,file_size&order=id&limit=1000&offset=0",
+        "row_count": 83,
+        "sha256": "0008bf8505038d050dd905f36fc7fec188a696fce6c326c3ae59defe712a649c",
+        "note": "",
+        "file": "video_submissions.json"
+      }
+    },
+    "comments": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:53.913119+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/comments?select=name,user_id,body,created_at&order=created_at&limit=1000&offset=0",
+          "row_count": 93,
+          "sha256": "8a5dc221e02283c5ffe3590759702eb825e9a28c5d4b05db9fbb2ed270e91405",
+          "note": ""
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:53.913119+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/comments?select=name,user_id,body,created_at&order=created_at&limit=1000&offset=0",
+        "row_count": 93,
+        "sha256": "8a5dc221e02283c5ffe3590759702eb825e9a28c5d4b05db9fbb2ed270e91405",
+        "note": "",
+        "file": "comments.json"
+      }
+    },
+    "poll_votes": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:54.727930+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/poll_votes?select=*&order=created_at&limit=1000&offset=0",
+          "row_count": 35,
+          "sha256": "a94d0b75a8951f71d2501a29e6e0f28563ad9232850a8c3c36f40706254b0848",
+          "note": ""
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:54.727930+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/poll_votes?select=*&order=created_at&limit=1000&offset=0",
+        "row_count": 35,
+        "sha256": "a94d0b75a8951f71d2501a29e6e0f28563ad9232850a8c3c36f40706254b0848",
+        "note": "",
+        "file": "poll_votes.json"
+      }
+    },
+    "favorites": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:55.690165+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/favorites?select=*&limit=1000",
+          "row_count": 0,
+          "sha256": "a3f4e1d4fdaadae9ac8c01b44b6539302501d5b63b1fc448984e615900ffb836",
+          "note": "RLS-protected: no rows visible to the anon key"
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:55.690165+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/favorites?select=*&limit=1000",
+        "row_count": 0,
+        "sha256": "a3f4e1d4fdaadae9ac8c01b44b6539302501d5b63b1fc448984e615900ffb836",
+        "note": "RLS-protected: no rows visible to the anon key",
+        "file": "favorites.json"
+      }
+    },
+    "watch_history": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:56.690235+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/watch_history?select=*&limit=1000",
+          "row_count": 0,
+          "sha256": "9226ab8bc85ad78867993dc393c112629a668b38a7b5ba38d1af922935a1a8be",
+          "note": "RLS-protected: no rows visible to the anon key"
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:56.690235+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/watch_history?select=*&limit=1000",
+        "row_count": 0,
+        "sha256": "9226ab8bc85ad78867993dc393c112629a668b38a7b5ba38d1af922935a1a8be",
+        "note": "RLS-protected: no rows visible to the anon key",
+        "file": "watch_history.json"
+      }
+    },
+    "video_reports": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:57.747149+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/video_reports?select=*&limit=1000",
+          "row_count": 0,
+          "sha256": "164838bf9b29a2844701667bd91dd3dbecb5b27c5d3a150715182ea84f361dbf",
+          "note": "RLS-protected: no rows visible to the anon key"
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:57.747149+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/video_reports?select=*&limit=1000",
+        "row_count": 0,
+        "sha256": "164838bf9b29a2844701667bd91dd3dbecb5b27c5d3a150715182ea84f361dbf",
+        "note": "RLS-protected: no rows visible to the anon key",
+        "file": "video_reports.json"
+      }
+    },
+    "model_requests": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:58.574679+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/model_requests?select=*&limit=1000",
+          "row_count": 0,
+          "sha256": "09c733bba8252d1ac7d8b14914b4ce4327dd3443fd376b5477b61abf4f4d4af6",
+          "note": "RLS-protected: no rows visible to the anon key"
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:58.574679+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/model_requests?select=*&limit=1000",
+        "row_count": 0,
+        "sha256": "09c733bba8252d1ac7d8b14914b4ce4327dd3443fd376b5477b61abf4f4d4af6",
+        "note": "RLS-protected: no rows visible to the anon key",
+        "file": "model_requests.json"
+      }
+    },
+    "title_suggestions": {
+      "history": [
+        {
+          "fetched_at": "2026-10-09T04:22:59.486159+00:00",
+          "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/title_suggestions?select=*&limit=1000",
+          "row_count": 0,
+          "sha256": "922d06dadbec1299d89e97e12b2b8b6a3677630500db7f08c7a1957a5f186d9d",
+          "note": "RLS-protected: no rows visible to the anon key"
+        }
+      ],
+      "latest": {
+        "fetched_at": "2026-10-09T04:22:59.486159+00:00",
+        "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/title_suggestions?select=*&limit=1000",
+        "row_count": 0,
+        "sha256": "922d06dadbec1299d89e97e12b2b8b6a3677630500db7f08c7a1957a5f186d9d",
+        "note": "RLS-protected: no rows visible to the anon key",
+        "file": "title_suggestions.json"
+      }
+    }
+  },
+  "updated_at": "2026-10-09T04:22:59.488623+00:00"
+}

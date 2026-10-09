@@ -1,0 +1,7 @@
+{
+  "name": "favorites",
+  "fetched_at": "2026-10-09T04:22:55.690165+00:00",
+  "source_url": "https://hbvwlzjxsmhreeqwypwp.supabase.co/rest/v1/favorites?select=*&limit=1000",
+  "row_count": 0,
+  "rows": []
+}
