@@ -1,1 +1,9 @@
 requests>=2.31
+
+# capture.py (headless page capture)
+playwright>=1.40
+
+# match.py (perceptual matching of JFF originals to rehosts)
+Pillow>=10.0
+numpy>=1.24
+opencv-python>=4.8
