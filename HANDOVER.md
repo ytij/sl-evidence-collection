@@ -2,8 +2,9 @@
 
 _Authored for the next agent/model taking over. Read this top to bottom before
 touching anything. It records the situation, hard constraints, architecture,
-findings, tooling, and open work. Pair it with `TODO.md` (live plan) and
-`osint/PUBLIC_EXPOSURE.md` (findings)._
+findings, tooling, and open work. Pair it with [`TODO.md`](TODO.md) (live plan),
+[`REPO_MAP.md`](REPO_MAP.md) (file-by-file index), and
+[`osint/PUBLIC_EXPOSURE.md`](osint/PUBLIC_EXPOSURE.md) (findings)._
 
 ---
 
@@ -166,8 +167,11 @@ build_legal.py          generates legal/EXHIBIT_INDEX.md + preservation letters
 legal/                  METHODOLOGY, DECLARATION_1746, SUBPOENA_512h, COMPLAINT,
                         EXHIBIT_INDEX, AUTHORITIES, authorities.json,
                         preservation/, exhibits/
+README.md               front door: purpose, quickstart, directory map
+REPO_MAP.md             file-by-file index of every primary file
+AGENTS.md               rules + common commands (agent entry point)
 TODO.md                 live plan/priorities
-HANDOVER.md             this document
+HANDOVER.md             this document (full brief)
 
 evidence/               raw table snapshots + manifest.json + timestamps/   (tracked, gitattributes -text)
 osint/                  SITE_CATALOG.*, PUBLIC_EXPOSURE.*, SUBPOENA_TARGETS.md

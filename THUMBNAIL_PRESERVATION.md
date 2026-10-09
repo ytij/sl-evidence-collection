@@ -3,7 +3,9 @@
 Preserving the CDN-cached thumbnails of the **610 orphaned works** is
 time-sensitive (they can be purged at any time) and is the most
 detectability-sensitive collection task in this project. This document
-examines it and records the stealth design. Tool: `preserve_thumbs.py`.
+examines it and records the stealth design. Tool: [`preserve_thumbs.py`](preserve_thumbs.py).
+
+**Navigate:** [`README`](README.md) · [`REPO_MAP`](REPO_MAP.md) · [`HANDOVER`](HANDOVER.md) · [`TODO`](TODO.md)
 
 ## 1. Objective
 Of the 624 matching works, only 14 still stream; **610 have been removed from

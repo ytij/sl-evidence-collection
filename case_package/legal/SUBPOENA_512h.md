@@ -3,8 +3,10 @@
 > **DRAFT — for counsel review and filing.** Authority: 17 U.S.C. § 512(h)
 > (clerk issues a subpoena to a service provider on a § 512(c)(3)(A)
 > notification, a proposed subpoena, and a sworn declaration). See
-> `legal/AUTHORITIES.md` (USC17-512). The same package can be aimed at any of
-> the targets in `osint/SUBPOENA_TARGETS.md` by substituting the provider.
+> [`AUTHORITIES.md`](AUTHORITIES.md) (USC17-512). The same package can be aimed at any of
+> the targets in [`SUBPOENA_TARGETS.md`](../osint/SUBPOENA_TARGETS.md) by substituting the provider.
+
+**Navigate:** [`REPO_MAP`](../REPO_MAP.md) · [`SUBPOENA_TARGETS`](../osint/SUBPOENA_TARGETS.md) · [`COMPLAINT`](COMPLAINT.md)
 
 ---
 

@@ -169,14 +169,15 @@ def write_exhibit_index(works):
     lines.append("")
     lines.append(f"_Generated {date.today().isoformat()} by `build_legal.py`._ "
                  "Hashes are SHA-256 of the listed artifact; timestamp column refers to "
-                 "`evidence/timestamps/index.json`.")
+                 "[`evidence/timestamps/index.json`](../evidence/timestamps/index.json). "
+                 "See [`REPO_MAP.md`](../REPO_MAP.md) and [`HANDOVER.md`](../HANDOVER.md).")
     lines.append("")
     lines.append("| Ex. | Description | Artifact | SHA-256 | Proves |")
     lines.append("| --- | --- | --- | --- | --- |")
     for tag, desc, rel, proves in EXHIBITS:
         digest = sha256(os.path.join(HERE, rel)) or "(directory — see its manifest)"
         d = digest if len(digest) <= 20 else digest[:20] + "…"
-        lines.append(f"| {tag} | {desc} | `{rel}` | `{d}` | {proves} |")
+        lines.append(f"| {tag} | {desc} | [`{rel}`](../{rel}) | `{d}` | {proves} |")
     lines.append("")
     lines.append(f"## Exhibit B — {len(works)} infringing works")
     lines.append("")
@@ -219,10 +220,10 @@ def write_exhibit_shells(works):
             f"# Exhibit {tag} — {desc}",
             "",
             f"**Proves:** {proves}",
-            f"**Underlying artifact:** `{rel}`",
+            f"**Underlying artifact:** [`{rel}`](../../{rel})",
             f"**SHA-256:** `{digest}`",
-            "**Timestamp:** see `evidence/timestamps/index.json`.",
-            "**Custodian:** [DECLARANT NAME] — see `legal/DECLARATION_1746.md`.",
+            "**Timestamp:** see [`evidence/timestamps/index.json`](../../evidence/timestamps/index.json).",
+            "**Custodian:** [DECLARANT NAME] — see [`legal/DECLARATION_1746.md`](../../legal/DECLARATION_1746.md).",
             "",
             "## Contents",
             "",

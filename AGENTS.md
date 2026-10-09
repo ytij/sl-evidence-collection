@@ -1,7 +1,8 @@
 # AGENTS.md
 
-This repo is a **copyright evidence-collection project** (see `HANDOVER.md`
-for the full brief and `TODO.md` for the plan). Read `HANDOVER.md` first.
+This repo is a **copyright evidence-collection project** (see [`HANDOVER.md`](HANDOVER.md)
+for the full brief, [`REPO_MAP.md`](REPO_MAP.md) for the file index, and
+[`TODO.md`](TODO.md) for the plan). Read [`HANDOVER.md`](HANDOVER.md) first.
 
 ## Non-negotiable rules
 - **Legality gate:** content is plain consensual adult age-play, no depiction of

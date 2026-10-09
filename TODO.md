@@ -4,6 +4,8 @@ Objective: preserve, authenticate, and package evidence of the rehosting of
 the creator's works on `abdlhub.com`, identify the Florida defendant, quantify
 damages, and drive automated takedowns through counsel.
 
+**Navigate:** [`README`](README.md) · [`REPO_MAP`](REPO_MAP.md) · [`HANDOVER`](HANDOVER.md) · [`legal/`](legal/) · [`osint/`](osint/) · [`THUMBNAIL_PRESERVATION`](THUMBNAIL_PRESERVATION.md)
+
 > **Gate (counsel to confirm):** the work is plain adult age-play between
 > consenting adults, with **no depiction of a minor (real or simulated)**.
 > Everything below assumes that. If that changes, stop and route to law

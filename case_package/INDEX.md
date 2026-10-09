@@ -1,6 +1,6 @@
 # ABDL-HUB — case package
 
-_Generated 2026-10-09T05:53:16.652806+00:00._
+_Generated 2026-10-09T06:28:14.322190+00:00._
 
 ## Parties & attribution
 

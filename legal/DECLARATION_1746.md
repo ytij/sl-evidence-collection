@@ -2,10 +2,12 @@
 
 > **DRAFT — for counsel review and completion.** Bracketed fields must be
 > completed and the declaration signed by a person with personal knowledge.
-> The declarant attests to the collection described in `legal/METHODOLOGY.md`.
+> The declarant attests to the collection described in [`METHODOLOGY.md`](METHODOLOGY.md).
 > Executed outside the United States, so the § 1746(1) form is used.
 > Authority: 28 U.S.C. § 1746; Fed. R. Evid. 901(b)(1), 902(13)–(14). See
-> `legal/AUTHORITIES.md` (USC28-1746, FRE-901, FRE-902).
+> [`AUTHORITIES.md`](AUTHORITIES.md) (USC28-1746, FRE-901, FRE-902).
+
+**Navigate:** [`REPO_MAP`](../REPO_MAP.md) · [`METHODOLOGY`](METHODOLOGY.md) · [`COMPLAINT`](COMPLAINT.md)
 
 ---
 

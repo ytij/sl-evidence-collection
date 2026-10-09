@@ -2,7 +2,9 @@
 
 Mapping of every document this project must produce (to authenticate evidence,
 prove the claim, and recover) to the controlling authority, with the source
-used to verify it. Structured data: `legal/authorities.json`.
+used to verify it. Structured data: [`authorities.json`](authorities.json).
+
+**Navigate:** [`REPO_MAP`](../REPO_MAP.md) · [`HANDOVER`](../HANDOVER.md) · [`COMPLAINT`](COMPLAINT.md) · [`DECLARATION_1746`](DECLARATION_1746.md) · [`METHODOLOGY`](METHODOLOGY.md) · [`SUBPOENA_512h`](SUBPOENA_512h.md)
 
 **Verified 2026-10-09.** Primary text for the statutes/rules was fetched from
 `law.cornell.edu` (U.S. Code, Federal Rules of Evidence) and

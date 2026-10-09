@@ -3,7 +3,10 @@
 Purpose: document, for authentication and for any custodian declaration, **how
 each item of evidence in this repository was collected, when, with what tools,
 and how its integrity is preserved**. Companion instruments:
-`legal/DECLARATION_1746.md`, `legal/AUTHORITIES.md`, `HANDOVER.md`.
+[`DECLARATION_1746.md`](DECLARATION_1746.md), [`AUTHORITIES.md`](AUTHORITIES.md),
+[`HANDOVER.md`](../HANDOVER.md).
+
+**Navigate:** [`REPO_MAP`](../REPO_MAP.md) · [`HANDOVER`](../HANDOVER.md) · [`DECLARATION_1746`](DECLARATION_1746.md) · [`COMPLAINT`](COMPLAINT.md)
 
 > This is a factual methodology record, not legal advice.
 

@@ -2,10 +2,12 @@
 
 > **DRAFT / TEMPLATE — not legal advice.** Bracketed fields, counts, and facts
 > marked `[TODO]` must be completed and verified by admitted counsel before
-> filing. Authorities are cited and were verified in `legal/AUTHORITIES.md`
-> (see `legal/authorities.json`). Plead in the alternative only as counsel
+> filing. Authorities are cited and were verified in [`AUTHORITIES.md`](AUTHORITIES.md)
+> (see [`authorities.json`](authorities.json)). Plead in the alternative only as counsel
 > advises. Keep the works described generically (refer to "the Works identified
-> in Exhibit B") — do not plead minor-coded title text (see `HANDOVER.md` §11).
+> in Exhibit B") — do not plead minor-coded title text (see [`HANDOVER.md`](../HANDOVER.md) §11).
+
+**Navigate:** [`REPO_MAP`](../REPO_MAP.md) · [`EXHIBIT_INDEX`](EXHIBIT_INDEX.md) · [`DECLARATION_1746`](DECLARATION_1746.md) · [`SUBPOENA_512h`](SUBPOENA_512h.md)
 
 ---
 

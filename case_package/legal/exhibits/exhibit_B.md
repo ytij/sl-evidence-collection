@@ -1,10 +1,10 @@
 # Exhibit B — Index of infringing works and URLs
 
 **Proves:** Per-work page URL, stream URL, thumbnail URL, uploader id, and submission timestamp.
-**Underlying artifact:** `takedowns/takedown_index.csv`
+**Underlying artifact:** [`takedowns/takedown_index.csv`](../../takedowns/takedown_index.csv)
 **SHA-256:** `3fe295c3ac2ff893b65094ccb31fa423571f4c198074faa5e5119208542a7552`
-**Timestamp:** see `evidence/timestamps/index.json`.
-**Custodian:** [DECLARANT NAME] — see `legal/DECLARATION_1746.md`.
+**Timestamp:** see [`evidence/timestamps/index.json`](../../evidence/timestamps/index.json).
+**Custodian:** [DECLARANT NAME] — see [`legal/DECLARATION_1746.md`](../../legal/DECLARATION_1746.md).
 
 ## Contents
 

@@ -1,8 +1,10 @@
 # Subpoena & preservation target dossier
 
 Who to serve, what to ask for, and by what mechanism. Identifiers below are
-those collected in `osint/` and `evidence/`. **Route every request through FL
-counsel.**
+those collected in [`osint/`](.) and [`evidence/`](../evidence/). **Route every request through FL
+counsel.** See [`legal/SUBPOENA_512h.md`](../legal/SUBPOENA_512h.md) for the § 512(h) package.
+
+**Navigate:** [`REPO_MAP`](../REPO_MAP.md) · [`PUBLIC_EXPOSURE`](PUBLIC_EXPOSURE.md) · [`legal/`](../legal/)
 
 ## Send preservation letters FIRST (today)
 The operator is under active takedown pressure (610 of 624 works already

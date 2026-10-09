@@ -1,18 +1,18 @@
 # Exhibit index
 
-_Generated 2026-10-08 by `build_legal.py`._ Hashes are SHA-256 of the listed artifact; timestamp column refers to `evidence/timestamps/index.json`.
+_Generated 2026-10-09 by `build_legal.py`._ Hashes are SHA-256 of the listed artifact; timestamp column refers to [`evidence/timestamps/index.json`](../evidence/timestamps/index.json). See [`REPO_MAP.md`](../REPO_MAP.md) and [`HANDOVER.md`](../HANDOVER.md).
 
 | Ex. | Description | Artifact | SHA-256 | Proves |
 | --- | --- | --- | --- | --- |
-| A | Attribution of the rehosted works | `osint/PUBLIC_EXPOSURE.md` | `735b03fc671aabc9d357…` | Links all 12 subject rehosts to the uploading account and the operator/mod accounts. |
-| B | Index of infringing works and URLs | `takedowns/takedown_index.csv` | `3fe295c3ac2ff893b650…` | Per-work page URL, stream URL, thumbnail URL, uploader id, and submission timestamp. |
-| C | Raw backend data snapshots | `evidence/manifest.json` | `0703d4d5229001287892…` | Twelve Supabase/Bunny tables captured verbatim with SHA-256 hashes and provenance. |
-| D | Rendered page captures (HTML/PNG/PDF) | `captures/20261009T050349Z/manifest.json` | `d39aa5b6f62717a5ee96…` | Each live page captured as served, age gate dismissed, with per-file hashes. |
-| E | Independent third-party archival (Wayback) | `captures/archive.json` | `430adad240428fb1ce03…` | Third-party snapshots that survive deletion of the originals. |
-| F | Site technology & infrastructure report | `osint/SITE_CATALOG.md` | `5505e991c639d91fd303…` | Hosting, CDN, backend, ad/analytics stack and the public access surface. |
-| G | RFC 3161 timestamp tokens | `evidence/timestamps/index.json` | `e4ce6c6533e12ab8a272…` | Trusted timestamps over the evidence and capture manifests. |
-| H | Damages computation | `damages/damages.json` | `9b5294f192ba630962c4…` | Work count, sizes, views, the infringement window, and the § 504(c) matrix. |
-| I | Legal authority mapping | `legal/AUTHORITIES.md` | `5c1b1292b6a1be56f126…` | Each required element mapped to a controlling authority with verified sources. |
+| A | Attribution of the rehosted works | [`osint/PUBLIC_EXPOSURE.md`](../osint/PUBLIC_EXPOSURE.md) | `735b03fc671aabc9d357…` | Links all 12 subject rehosts to the uploading account and the operator/mod accounts. |
+| B | Index of infringing works and URLs | [`takedowns/takedown_index.csv`](../takedowns/takedown_index.csv) | `3fe295c3ac2ff893b650…` | Per-work page URL, stream URL, thumbnail URL, uploader id, and submission timestamp. |
+| C | Raw backend data snapshots | [`evidence/manifest.json`](../evidence/manifest.json) | `0703d4d5229001287892…` | Twelve Supabase/Bunny tables captured verbatim with SHA-256 hashes and provenance. |
+| D | Rendered page captures (HTML/PNG/PDF) | [`captures/20261009T050349Z/manifest.json`](../captures/20261009T050349Z/manifest.json) | `d39aa5b6f62717a5ee96…` | Each live page captured as served, age gate dismissed, with per-file hashes. |
+| E | Independent third-party archival (Wayback) | [`captures/archive.json`](../captures/archive.json) | `430adad240428fb1ce03…` | Third-party snapshots that survive deletion of the originals. |
+| F | Site technology & infrastructure report | [`osint/SITE_CATALOG.md`](../osint/SITE_CATALOG.md) | `5505e991c639d91fd303…` | Hosting, CDN, backend, ad/analytics stack and the public access surface. |
+| G | RFC 3161 timestamp tokens | [`evidence/timestamps/index.json`](../evidence/timestamps/index.json) | `e4ce6c6533e12ab8a272…` | Trusted timestamps over the evidence and capture manifests. |
+| H | Damages computation | [`damages/damages.json`](../damages/damages.json) | `9b5294f192ba630962c4…` | Work count, sizes, views, the infringement window, and the § 504(c) matrix. |
+| I | Legal authority mapping | [`legal/AUTHORITIES.md`](../legal/AUTHORITIES.md) | `692ff8fc474eac500e4d…` | Each required element mapped to a controlling authority with verified sources. |
 
 ## Exhibit B — 12 infringing works
 
