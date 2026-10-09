@@ -156,6 +156,7 @@ timestamp.py            RFC 3161 (FreeTSA) timestamper; .tsq/.tsr + index
 capture.py              Playwright page capture (HTML+PNG+PDF), age-gate aware
 archive.py              Wayback Machine submission
 preserve_thumbs.py      stealth preservation of the 610 orphaned thumbnails
+preserve_media.py       download+hash full HLS media of live works (bytes in staging/)
 THUMBNAIL_PRESERVATION.md  stealth analysis + rollout plan for the thumbnails
 osint_recon.py          tech-stack OSINT -> osint/site_catalog.{json,md}
 osint/public_exposure.py  attribution/public-exposure review -> osint/ + evidence/

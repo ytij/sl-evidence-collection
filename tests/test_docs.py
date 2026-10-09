@@ -11,6 +11,7 @@ REFERENCED = [
     "timestamp.py",
     "capture.py",
     "archive.py",
+    "preserve_media.py",
     "osint_recon.py",
     "osint/public_exposure.py",
     "takedown.py",
@@ -31,6 +32,7 @@ REFERENCED = [
     "osint/SUBPOENA_TARGETS.md",
     "takedowns/takedown_index.csv",
     "captures/archive.json",
+    "captures/media_manifest.json",
     "captures/20261009T050349Z/manifest.json",
     "evidence/manifest.json",
 ]

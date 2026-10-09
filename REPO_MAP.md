@@ -30,6 +30,7 @@ Links are relative to the repo root. Generated/derived files are marked ⟳.
 | [`capture.py`](capture.py) | Headless page capture (HTML/PNG/PDF), age-gate aware. | `python capture.py` |
 | [`archive.py`](archive.py) | Wayback Machine submission. | `python archive.py` |
 | [`preserve_thumbs.py`](preserve_thumbs.py) | Stealth preservation of the 610 orphaned thumbnails. | `python preserve_thumbs.py --limit 60` |
+| [`preserve_media.py`](preserve_media.py) | Downloads + hashes full HLS media of live works → `staging/media/` + `captures/media_manifest.json`. | `python preserve_media.py` |
 | [`takedown.py`](takedown.py) | Generates the infringing-work index + DMCA § 512(c) notices. | `python takedown.py` |
 | [`damages.py`](damages.py) | Aggregates damages inputs + § 504(c) matrix. | `python damages.py` |
 | [`match.py`](match.py) | Matches JFF originals ↔ rehosts (duration/title/pHash). | `python match.py --originals <jff>` |
@@ -79,8 +80,10 @@ Links are relative to the repo root. Generated/derived files are marked ⟳.
 | --- | --- |
 | [`captures/archive.json`](captures/archive.json) | Wayback snapshots for the works. |
 | [`captures/20261009T050349Z/manifest.json`](captures/20261009T050349Z/manifest.json) | Per-file hashes of the page captures (12 works × HTML/PNG/PDF). |
-| [`captures/thumbs/manifest.json`](captures/thumbs/manifest.json) | Hashes of preserved orphan thumbnails. |
-| [`captures/thumbs/`](captures/thumbs/) | Preserved thumbnail JPEGs (batch 1: 62/610). |
+| [`captures/thumbs/manifest.json`](captures/thumbs/manifest.json) | Hashes of preserved orphan thumbnails (608/610). |
+| [`captures/thumbs/`](captures/thumbs/) | Preserved thumbnail JPEGs. |
+| [`captures/media_manifest.json`](captures/media_manifest.json) | Hashes of the 14 live works' full HLS media (bytes in gitignored `staging/media/`). |
+| `staging/media/` (gitignored) | Full `.ts` media + keys for the 14 live works (~361 MB). |
 
 ## 7. `takedowns/` — infringement index & notices
 | File | What it is |
@@ -119,6 +122,8 @@ Links are relative to the repo root. Generated/derived files are marked ⟳.
 | [`tests/test_damages.py`](tests/test_damages.py) | Aggregate math + statutory constants. |
 | [`tests/test_court_docs.py`](tests/test_court_docs.py) | Complaint/exhibit/declaration/preservation content. |
 | [`tests/test_thumbs.py`](tests/test_thumbs.py) | Thumbnail targeting + manifest consistency. |
+| [`tests/test_media.py`](tests/test_media.py) | Media manifest + hashes. |
+| [`tests/test_notion.py`](tests/test_notion.py) | Notion export schema + row counts. |
 | [`tests/test_evidence_store.py`](tests/test_evidence_store.py) · [`tests/test_timestamp.py`](tests/test_timestamp.py) | Store tamper-detection; RFC 3161 DER structure. |
 | [`tests/test_docs.py`](tests/test_docs.py) · [`tests/test_links.py`](tests/test_links.py) | Referenced paths exist; all markdown links resolve. |
 | [`tests/common.py`](tests/common.py) | Shared test helpers. |
@@ -135,6 +140,7 @@ Regenerate with [`package.py`](package.py). Not edited by hand.
 - `osint/*` → [`osint_recon.py`](osint_recon.py) / [`osint/public_exposure.py`](osint/public_exposure.py)
 - `captures/…` → [`capture.py`](capture.py); `captures/archive.json` → [`archive.py`](archive.py)
 - `captures/thumbs/…` → [`preserve_thumbs.py`](preserve_thumbs.py)
+- `captures/media_manifest.json` + `staging/media/…` → [`preserve_media.py`](preserve_media.py)
 - `takedowns/*` → [`takedown.py`](takedown.py)
 - `damages/*` → [`damages.py`](damages.py)
 - `legal/EXHIBIT_INDEX.md`, `legal/exhibits/`, `legal/preservation/` → [`build_legal.py`](build_legal.py)

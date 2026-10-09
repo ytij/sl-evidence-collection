@@ -52,9 +52,11 @@ The full, file-by-file index with links is in [`REPO_MAP.md`](REPO_MAP.md).
 1. **Collect** — [`sophie_scrape.py`](sophie_scrape.py), [`osint/public_exposure.py`](osint/public_exposure.py) → raw data.
 2. **Snapshot** — [`evidence_store.py`](evidence_store.py) → [`evidence/`](evidence/) with hashes.
 3. **Authenticate** — [`timestamp.py`](timestamp.py) → [`evidence/timestamps/`](evidence/timestamps/); [`capture.py`](capture.py) for rendered pages.
-4. **Corroborate** — [`archive.py`](archive.py) (Wayback) and [`preserve_thumbs.py`](preserve_thumbs.py).
+4. **Preserve the copies** — [`preserve_media.py`](preserve_media.py) (full HLS media) and [`preserve_thumbs.py`](preserve_thumbs.py); [`archive.py`](archive.py) (Wayback).
 5. **Package** — [`takedown.py`](takedown.py), [`damages.py`](damages.py), [`build_legal.py`](build_legal.py), [`package.py`](package.py) → [`legal/`](legal/) + [`case_package/`](case_package/).
 
 ## Status snapshot
-624 matching works (14 live / 610 orphaned); 12 attributed to uploader `Creator1`;
-thumbnails preserved 62/610 so far; 71 tests passing. Details in [`TODO.md`](TODO.md).
+624 matching works (14 live / 610 orphaned); 12 attributed to uploader `Creator1`.
+Preserved during the deletion sweep: **full media for all 14 live works**,
+**608/610 orphan thumbnails**, and **page captures for all 14**. 80 tests passing.
+Details in [`TODO.md`](TODO.md).
