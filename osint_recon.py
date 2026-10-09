@@ -386,6 +386,8 @@ def write_markdown(report):
                  "deleted from the Bunny library.")
     lines.append("- **Monetisation:** ExoClick banner + popunder + VAST pre-roll, all client-side; "
                  "none of it gates the underlying media URL.")
+    lines.append("- **See also:** `osint/PUBLIC_EXPOSURE.md` for the uploader-attribution and "
+                 "public-data-exposure review (read-only via the published anon key).")
     lines.append("")
     lines.append("_Raw evidence: `osint/site_catalog.json`._")
     lines.append("")

@@ -205,5 +205,6 @@ Auth settings (public `/auth/v1/settings`): email provider enabled, signup enabl
 - **Attack surface:** the Supabase **anon JWT is embedded in the page source**, so every table with permissive RLS is readable without authentication. The media CDN needs only a `Referer: https://abdlhub.com/` header.
 - **Inconsistency indicative of AI/quick build:** tags are stored in `video_meta.tags` but applied inconsistently (creator content often carries only a title, not a tag), and several historical tag rows reference videos already deleted from the Bunny library.
 - **Monetisation:** ExoClick banner + popunder + VAST pre-roll, all client-side; none of it gates the underlying media URL.
+- **See also:** `osint/PUBLIC_EXPOSURE.md` for the uploader-attribution and public-data-exposure review (read-only via the published anon key).
 
 _Raw evidence: `osint/site_catalog.json`._
