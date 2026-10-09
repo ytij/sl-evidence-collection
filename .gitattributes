@@ -1,2 +1,3 @@
 # Evidence snapshots are hashed byte-for-byte; never let git rewrite their EOLs.
 evidence/*.json -text
+captures/** -text

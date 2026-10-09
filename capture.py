@@ -73,7 +73,12 @@ def main():
                 btn = page.query_selector("#ageGate .btn-enter")
                 if btn and btn.is_visible():
                     btn.click()
-                page.wait_for_timeout(3500)
+                # Let the SPA fetch its catalog / open the deep-linked video.
+                try:
+                    page.wait_for_selector("[data-guid], #playerModal, video", timeout=20000)
+                except Exception:
+                    pass
+                page.wait_for_timeout(4000)
                 html = page.content()
                 html_path = os.path.join(run_dir, f"{g}.html")
                 with open(html_path, "w", encoding="utf-8", newline="") as fh:
