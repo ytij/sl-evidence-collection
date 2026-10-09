@@ -160,6 +160,9 @@ takedown.py             DMCA §512(c) notice generator -> takedowns/
 damages.py              damages inputs & §504(c) matrix -> damages/
 match.py                JFF originals <-> rehosts matcher -> matches/
 package.py              lawyer-ready bundle -> case_package/ (+ zip)
+build_legal.py          generates legal/EXHIBIT_INDEX.md + preservation letters
+legal/                  METHODOLOGY, DECLARATION_1746, SUBPOENA_512h, EXHIBIT_INDEX,
+                        AUTHORITIES, authorities.json, preservation/
 TODO.md                 live plan/priorities
 HANDOVER.md             this document
 
@@ -257,7 +260,9 @@ reused everywhere:
 - `takedowns/` — `takedown_index.csv` + notices for operator/Netlify/Bunny/Supabase.
 - `damages/` — **12 works, 8.13 GiB, 1.79 h, 2,511 views; §504(c) willful max $1.8M**.
 - `osint/` — tech catalog, `PUBLIC_EXPOSURE.md`, `SUBPOENA_TARGETS.md`.
-- `case_package/` + `case_package_20261009.zip` (text-only bundle).
+- `legal/` — `AUTHORITIES.md`/`.json` (verified citations), `METHODOLOGY.md`, `DECLARATION_1746.md`, `SUBPOENA_512h.md`, `EXHIBIT_INDEX.md`, `preservation/`.
+- `tests/` + `run_tests.py` — 64 integrity/validation tests (all pass).
+- `case_package/` + `case_package_20261009.zip` (text-only bundle, now incl. `legal/`).
 
 ---
 

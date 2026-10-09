@@ -90,6 +90,19 @@ def main():
     # Text artifacts.
     copy_text(os.path.join(HERE, "takedowns"), (".txt",))
 
+    # Legal instruments (court-facing drafts).
+    legal_src = os.path.join(HERE, "legal")
+    legal_dst = os.path.join(PKG, "legal")
+    os.makedirs(os.path.join(legal_dst, "preservation"), exist_ok=True)
+    for name in os.listdir(legal_src):
+        src = os.path.join(legal_src, name)
+        if os.path.isfile(src) and name.endswith((".md", ".json")):
+            shutil.copy2(src, os.path.join(legal_dst, name))
+    pres_src = os.path.join(legal_src, "preservation")
+    if os.path.isdir(pres_src):
+        for name in os.listdir(pres_src):
+            shutil.copy2(os.path.join(pres_src, name), os.path.join(legal_dst, "preservation", name))
+
     # Evidence inventory.
     with open(os.path.join(PKG, "evidence_index.csv"), "w", newline="", encoding="utf-8-sig") as fh:
         import csv
@@ -177,6 +190,15 @@ def write_index(works, damages, results, ev, ts, manifest):
     L.append(f"- RFC 3161 trusted timestamps ({len(ts)}): `evidence/timestamps/` (tokens verifiable with `openssl ts -verify`).")
     L.append("- Page captures (HTML+PNG+PDF) hashed in `captures/<run>/manifest.json`.")
     L.append("- Package integrity: `manifest.sha256`.")
+    L.append("")
+    L.append("## Legal instruments")
+    L.append("")
+    L.append("- `legal/DECLARATION_1746.md` — custodian declaration (28 U.S.C. § 1746).")
+    L.append("- `legal/METHODOLOGY.md` — collection methodology (authentication foundation).")
+    L.append("- `legal/SUBPOENA_512h.md` — § 512(h) identification-subpoena package.")
+    L.append("- `legal/EXHIBIT_INDEX.md` — Exhibits A–I with hashes and timestamp references.")
+    L.append("- `legal/preservation/` — preservation / legal-hold letters (Supabase, Bunny, Netlify, ExoClick).")
+    L.append("- `legal/AUTHORITIES.md` — each required element mapped to controlling authority (verified sources).")
     L.append("")
     L.append("## Counsel must supply")
     L.append("")

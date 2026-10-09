@@ -1,6 +1,6 @@
 # ABDL-HUB — case package
 
-_Generated 2026-10-09T05:07:14.117134+00:00._
+_Generated 2026-10-09T05:44:17.538241+00:00._
 
 ## Parties & attribution
 
@@ -39,6 +39,15 @@ _Generated 2026-10-09T05:07:14.117134+00:00._
 - RFC 3161 trusted timestamps (2): `evidence/timestamps/` (tokens verifiable with `openssl ts -verify`).
 - Page captures (HTML+PNG+PDF) hashed in `captures/<run>/manifest.json`.
 - Package integrity: `manifest.sha256`.
+
+## Legal instruments
+
+- `legal/DECLARATION_1746.md` — custodian declaration (28 U.S.C. § 1746).
+- `legal/METHODOLOGY.md` — collection methodology (authentication foundation).
+- `legal/SUBPOENA_512h.md` — § 512(h) identification-subpoena package.
+- `legal/EXHIBIT_INDEX.md` — Exhibits A–I with hashes and timestamp references.
+- `legal/preservation/` — preservation / legal-hold letters (Supabase, Bunny, Netlify, ExoClick).
+- `legal/AUTHORITIES.md` — each required element mapped to controlling authority (verified sources).
 
 ## Counsel must supply
 

@@ -1,0 +1,53 @@
+[LETTERHEAD OF COUNSEL]
+[DATE]
+
+VIA EMAIL AND CERTIFIED MAIL
+Preservation / Legal Hold Notice
+Re: [CLIENT NAME] v. [DEFENDANT — to be identified]; Copyright Infringement
+    of works published on abdlhub.com
+
+To: Bunny.net (BunnyWay d.o.o.) — Legal / Trust & Safety
+    operator of the CDN/Stream service hosting the infringing video files
+
+Dear Sir or Madam:
+
+This firm represents [CLIENT], the owner of copyrighted works that appear to
+have been reproduced and publicly distributed without authorization on the
+website abdlhub.com (the "Site"). Litigation is reasonably anticipated. This
+letter is a demand that Bunny.net (BunnyWay d.o.o.) preserve, and refrain from deleting or altering,
+all records in its possession, custody, or control relating to the Site and the
+following specific identifiers:
+
+   - Stream library: 621930
+   - Pull zone: vz-e81debcf-c73.b-cdn.net
+   - Storage zone: abdlhub-images.b-cdn.net
+   - 12 offending media GUIDs listed in Exhibit B
+
+Please preserve, at minimum, the following categories of records (including
+metadata and, where applicable, the contents themselves), and suspend any
+auto-deletion or retention policy that would otherwise purge them:
+
+  1. Account registration and billing records (name, address, email, phone,
+     payment method) for the accounts associated with the identifiers above.
+  2. Connection/access logs, including IP addresses, user agents, and
+     timestamps of uploads, API calls, and downloads.
+  3. The uploaded content and any associated filenames, thumbnails, and
+     metadata.
+  4. Communications with the account holder(s) and with any third party about
+     the content or the Site.
+
+This request covers records regardless of the medium or system on which they
+reside, including backups, archives, and logs. If any responsive records are
+subject to a routine destruction policy, please preserve them pending
+resolution of this matter. Failure to preserve may result in sanctions under
+Fed. R. Civ. P. 37(e).
+
+Please confirm in writing, within ten (10) business days, that these records
+have been preserved and identify the custodian responsible for them. Nothing
+in this letter waives any right or remedy; all rights are expressly reserved.
+
+Very truly yours,
+
+[SIGNATURE]
+[COUNSEL NAME], Esq.
+[FIRM] | [ADDRESS] | [PHONE] | [EMAIL]
