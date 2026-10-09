@@ -58,8 +58,8 @@ Two facts drive the strategy:
 | Backend tables (12) | [`evidence/`](evidence/), [`evidence/manifest.json`](evidence/manifest.json) | SHA-256 per table + provenance |
 | Trusted timestamps | [`evidence/timestamps/index.json`](evidence/timestamps/index.json) | **RFC 3161** tokens (FreeTSA) |
 | Rehosted media (14 works) | [`captures/media_manifest.json`](captures/media_manifest.json) (bytes in gitignored `staging/media/`) | SHA-256 per work + key |
-| Orphan thumbnails (608) | [`captures/thumbs/`](captures/thumbs/) | SHA-256 per image |
-| Page captures (HTML/PNG/PDF) | [`captures/20261009T201150Z/`](captures/20261009T201150Z/) | SHA-256 per file |
+| Orphan thumbnails (608) | [`captures/thumbs/`](captures/thumbs/) (bytes local-only) | SHA-256 per image |
+| Page captures (HTML committed; PNG/PDF local-only) | [`captures/20261009T201150Z/`](captures/20261009T201150Z/) | SHA-256 per file |
 | Independent archive | [`captures/archive.json`](captures/archive.json) | Wayback snapshots |
 | DMCA notices | [`takedowns/`](takedowns/) | § 512(c)(3) element-complete |
 | Damages computation | [`damages/`](damages/) | § 504(c) matrix |
@@ -134,8 +134,10 @@ system designed in [`JFF_MATCHING.md`](JFF_MATCHING.md).
   target's server clock.
 - This project assumes the content is consensual adult work with **no depiction
   of a minor (real or simulated)**; that premise must hold for the civil posture.
-- The rehosted media bytes live in gitignored `staging/media/` (**back up out of
-  the repo**); the committed manifest proves their hashes.
+- **Media bytes are excluded from the git repo.** The rehosted videos live in
+  gitignored `staging/media/`, and the thumbnails/screenshots/PDFs also stay
+  local (gitignored); only the SHA-256 manifests are committed. Back the bytes
+  up out of the repo — a clone contains hashes, not imagery.
 
 ## 8. Navigating the repository
 [`REPO_MAP.md`](REPO_MAP.md) is the file-by-file index. Highlights:

@@ -81,7 +81,7 @@ Links are relative to the repo root. Generated/derived files are marked ⟳.
 | [`captures/archive.json`](captures/archive.json) | Wayback snapshots for the works. |
 | [`captures/20261009T050349Z/manifest.json`](captures/20261009T050349Z/manifest.json) | Per-file hashes of the page captures (12 works × HTML/PNG/PDF). |
 | [`captures/thumbs/manifest.json`](captures/thumbs/manifest.json) | Hashes of preserved orphan thumbnails (608/610). |
-| [`captures/thumbs/`](captures/thumbs/) | Preserved thumbnail JPEGs. |
+| [`captures/thumbs/`](captures/thumbs/) | Thumbnail JPEGs (bytes gitignored; hashes committed). |
 | [`captures/media_manifest.json`](captures/media_manifest.json) | Hashes of the 14 live works' full HLS media (bytes in gitignored `staging/media/`). |
 | `staging/media/` (gitignored) | Full `.ts` media + keys for the 14 live works (~361 MB). |
 

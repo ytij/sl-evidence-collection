@@ -1,5 +1,13 @@
 .cache/
 staging/
+# Image/page evidence is kept locally but excluded from the shared repo.
+# Integrity is preserved by the committed manifests (hashes), not the bytes.
+captures/**/*.jpg
+captures/**/*.jpeg
+captures/**/*.png
+captures/**/*.webp
+captures/**/*.gif
+captures/**/*.pdf
 __pycache__/
 *.pyc
 .venv/
