@@ -27,7 +27,7 @@ So P1 (preserve) and P2 (register) are co-#1: one protects the evidence, the oth
 ## P1 — Freeze & authenticate evidence  *(do first)*
 - [x] Raw API/table snapshots + hash manifest (`evidence/`).
 - [x] **RFC 3161 trusted timestamp** of the evidence manifest (`timestamp.py`) → `evidence/timestamps/` (FreeTSA).
-- [ ] Full **page capture** (HTML + screenshot + PDF) per live URL (`capture.py`) — needs `pip install playwright && playwright install chromium`.
+- [x] Full **page capture** (HTML + screenshot + PDF) per live URL (`capture.py`) — 12/12 captured, hashed, timestamped → `captures/20261009T050349Z/`.
 - [x] Independent archival: `archive.py` submitted the 12 works to the **Wayback Machine** (8/12 snapshotted; 4 retryable) → `captures/archive.json`.
 - [ ] Capture the **monetization** surface (ExoClick zones, Bitcoin, supporter paywall) as served on-page.
 - [ ] Preserve the **delisted** works' thumbnails (610) + `video_meta` rows (already snapshotted) as proof they existed.
@@ -36,6 +36,8 @@ So P1 (preserve) and P2 (register) are co-#1: one protects the evidence, the oth
 - [ ] Per-work **US Copyright Office registration** status; register now if not timely (statutory damages + fees).
 - [ ] Originals with **EXIF/creation timestamps**; original platform upload dates; releases/contracts.
 - [ ] Document authorship chain for the `Sophie Little` works (maps to `Creator1` submissions 9,10,33,34,70–73,80,86–88).
+- [ ] Match originals (JFF export) to rehosts (`match.py --originals <export>`) → `matches/`.
+- [ ] Assemble lawyer-ready bundle (`package.py --include-media --zip`) → `case_package/`.
 
 ## P3 — Identify the Florida defendant
 - [ ] Subpoena target dossier (`osint/SUBPOENA_TARGETS.md`).
@@ -66,8 +68,10 @@ So P1 (preserve) and P2 (register) are co-#1: one protects the evidence, the oth
 ## Tooling map
 | Pri | Tool | Status |
 | --- | --- | --- |
-| P1 | `timestamp.py` (RFC 3161) | this pass |
-| P1 | `capture.py` (Playwright) | next (needs `pip install playwright && playwright install chromium`) |
-| P3 | `osint/SUBPOENA_TARGETS.md` | this pass |
-| P4 | `damages.py` | this pass |
-| P5 | `takedown.py` | this pass |
+| P1 | `timestamp.py` (RFC 3161) | done |
+| P1 | `capture.py` (Playwright) | done (12/12) |
+| P1 | `archive.py` (Wayback) | 8/12, retryable |
+| P2 | `match.py` (originals ↔ rehosts) | ready for JFF export |
+| P5 | `takedown.py` | done (12 works, 4 notices) |
+| P4 | `damages.py` | done |
+| — | `package.py` (lawyer bundle) | done |
