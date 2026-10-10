@@ -1,0 +1,19 @@
+[
+  {
+    "audited_at": "2026-10-10T07:15:19.819772+00:00",
+    "dir": "evidence/availability/20261010T071519Z",
+    "snapshot_json_sha256": "60b0ab294636ef401188ee1e69edd314a6c216ba6ffe400ccad444f658f2ecd6",
+    "snapshot_csv_sha256": "4f53878f9295344bf2a768b7f93d8e866f7c7150dabc730a906c7e839a08dce8",
+    "summary": {
+      "probed": 624,
+      "now_live": 14,
+      "taken_down_since": 0,
+      "still_live": 14,
+      "newly_live": 0,
+      "still_down": 610,
+      "not_probed": 0
+    },
+    "catalog_total": 3215,
+    "video_meta_rows": 2988
+  }
+]

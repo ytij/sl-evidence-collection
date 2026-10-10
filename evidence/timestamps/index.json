@@ -52,5 +52,14 @@
     "tsq": "evidence/timestamps/20261009T203407Z_manifest.tsq",
     "tsr": "evidence/timestamps/20261009T203407Z_manifest.tsr",
     "tsr_sha256": "5f7e75ed4109b3c6ef12e60f6323b0ac0e2169350d58823dfe2f27b3da4c662a"
+  },
+  {
+    "created_at": "2026-10-10T07:15:39.772656+00:00",
+    "target": "evidence/availability/20261010T071519Z/snapshot.json",
+    "sha256": "60b0ab294636ef401188ee1e69edd314a6c216ba6ffe400ccad444f658f2ecd6",
+    "tsa": "https://freetsa.org/tsr",
+    "tsq": "evidence/timestamps/20261010T071539Z_snapshot.tsq",
+    "tsr": "evidence/timestamps/20261010T071539Z_snapshot.tsr",
+    "tsr_sha256": "eee0ce29868dbd40b2742f68550ef3b140b5450bc7d62c3c12a0758270474e94"
   }
 ]

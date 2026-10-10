@@ -23,6 +23,7 @@ Links are relative to the repo root. Generated/derived files are marked ⟳.
 | File | What it does | Run |
 | --- | --- | --- |
 | [`sophie_scrape.py`](sophie_scrape.py) | Discovers + verifies the rehosts; builds URLs; caches; low-profile HTTP. | `python sophie_scrape.py --verify` |
+| [`availability.py`](availability.py) | Append-only, timestamped availability audit (still-up vs taken-down). | `python availability.py` |
 | [`osint_recon.py`](osint_recon.py) | Tech-stack OSINT → `osint/site_catalog.*`. | `python osint_recon.py` |
 | [`osint/public_exposure.py`](osint/public_exposure.py) | Attribution/public-exposure review; writes `evidence/` + `osint/PUBLIC_EXPOSURE.*`. | `python osint/public_exposure.py` |
 | [`evidence_store.py`](evidence_store.py) | Evidence snapshots + SHA-256 manifest; `verify` CLI. | `python evidence_store.py evidence` |
@@ -64,6 +65,7 @@ Links are relative to the repo root. Generated/derived files are marked ⟳.
 | [`evidence/poll_votes.json`](evidence/poll_votes.json) | Poll votes. |
 | [`evidence/favorites.json`](evidence/favorites.json) · [`evidence/watch_history.json`](evidence/watch_history.json) · [`evidence/video_reports.json`](evidence/video_reports.json) · [`evidence/model_requests.json`](evidence/model_requests.json) · [`evidence/title_suggestions.json`](evidence/title_suggestions.json) | RLS-protected — empty (negative evidence). |
 | [`evidence/timestamps/index.json`](evidence/timestamps/index.json) | RFC 3161 tokens over the manifests (`.tsq`/`.tsr` alongside). |
+| [`evidence/availability/`](evidence/availability/) | Append-only availability audits (still-up vs taken-down) + [`NOTES.md`](evidence/availability/NOTES.md). |
 
 ## 5. `osint/` — technology & attribution
 | File | What it is |
