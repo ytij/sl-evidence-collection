@@ -51,6 +51,11 @@ Two facts drive the strategy:
 6. **Asset preservation succeeded.** Full **video media for all 14 live works**
    (345 MB), **608 of 610 orphaned thumbnails**, rendered page captures for all
    14, and 12 backend tables — all hashed and timestamped.
+7. **No takedown of the live works.** A timestamped availability audit
+   ([`evidence/availability/`](evidence/availability/)) shows **all 14 works still
+   served (HTTP 200) as of 2026-10-10**; the operator has **not** removed them
+   (the other 610 were delisted earlier). An earlier "everything taken down"
+   reading was a bug in our tool — see [`evidence/availability/NOTES.md`](evidence/availability/NOTES.md).
 
 ## 3. Evidence and authenticity
 | What | Where | Integrity |
@@ -63,6 +68,7 @@ Two facts drive the strategy:
 | Independent archive | [`captures/archive.json`](captures/archive.json) | Wayback snapshots |
 | DMCA notices | [`takedowns/`](takedowns/) | § 512(c)(3) element-complete |
 | Damages computation | [`damages/`](damages/) | § 504(c) matrix |
+| Availability audits | [`evidence/availability/`](evidence/availability/) | timestamped, append-only |
 
 **How the evidence was obtained (for authentication):** every item was collected
 through the site's **ordinary public interface** using the anonymous key the

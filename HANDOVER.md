@@ -157,6 +157,7 @@ capture.py              Playwright page capture (HTML+PNG+PDF), age-gate aware
 archive.py              Wayback Machine submission
 preserve_thumbs.py      stealth preservation of the 610 orphaned thumbnails
 preserve_media.py       download+hash full HLS media of live works (bytes in staging/)
+availability.py         append-only timestamped availability audit (still-up vs taken-down)
 THUMBNAIL_PRESERVATION.md  stealth analysis + rollout plan for the thumbnails
 osint_recon.py          tech-stack OSINT -> osint/site_catalog.{json,md}
 osint/public_exposure.py  attribution/public-exposure review -> osint/ + evidence/
@@ -178,8 +179,8 @@ AGENTS.md               rules + common commands (agent entry point)
 TODO.md                 live plan/priorities
 HANDOVER.md             this document (full brief)
 
-evidence/               raw table snapshots + manifest.json + timestamps/   (tracked, gitattributes -text)
-osint/                  SITE_CATALOG.*, PUBLIC_EXPOSURE.*, SUBPOENA_TARGETS.md
+evidence/               raw table snapshots + manifest.json + timestamps/ + availability/  (tracked, -text)
+osint/                  SITE_CATALOG.*, PUBLIC_EXPOSURE.*, SUBPOENA_TARGETS.md, raw/
 captures/<run>/         per-guid .html/.png/.pdf + manifest.json + archive.json
 takedowns/              takedown_index.csv + 4 DMCA notices
 damages/                damages.json + damages.md
@@ -335,20 +336,37 @@ Discord invite           kbnJTj2DB
 
 ---
 
-## 14. Git conventions in use
-- Small, frequent, descriptive commits (see log). **Commit early and often.**
-- Never commit secrets you introduce; the only credential in-repo is the site's
-  **public anon JWT** (by design).
-- Repo-local git identity was set (`jas` / `jas@localhost`) because none was
-  configured; global config was not touched.
-- `.cache/` and `__pycache__/` are ignored; `evidence/`, `captures/`,
-  `takedowns/`, `damages/`, `case_package/` are tracked.
+## 14. Git, remote & identity
+- **Remote:** `origin = git@github.com:ytij/sl-evidence-collection.git` (private).
+- **Push identity:** the `ytij` account, via a dedicated key
+  `~/.ssh/id_ed25519_ytij`, wired repo-locally:
+  `git config core.sshCommand "ssh -i C:/Users/j/.ssh/id_ed25519_ytij -o IdentitiesOnly=yes"`.
+  (The machine's default SSH/`gh` is a *different* account, `erronjason`.)
+- **Commit identity:** `J <j@jas.run>` (author + committer), repo-local. For
+  GitHub to attribute commits to `ytij`, add `j@jas.run` as a verified email there.
+- Push: `git push -u origin master` (master tracks `origin/master`); `int` is
+  intentionally **unpushed** (see §15).
+- History was rewritten once (authorized) to set the identity — the only rewrite.
+- Do not commit secrets; the only credential in-repo is the site's public anon JWT.
+- **Media/images are gitignored** (only hashes committed) — back up the bytes.
+  Ignored: `.cache/`, `staging/`, `__pycache__/`, `captures/**/*.{jpg,jpeg,png,pdf,webp,gif}`.
 
 ---
 
-## 15. Hard "do nots"
+## 15. Operations, branches & hard "do nots"
+- The `int` branch holds an authorized security-validation engagement scaffold
+  for the (now cooperative) site operator; keep it separate from `master` and
+  **unpushed** until scope is signed. Do not run active testing without written
+  authorization.
+- **Back up the media bytes**: `staging/media/` and `captures/**` are gitignored
+  (local-only); only hashes are committed.
+- **Availability audits are append-only**: `python availability.py` writes a new
+  timestamped snapshot under `evidence/availability/`; never overwrite prior ones.
+
+### Hard "do nots"
 - Do not attempt unauthorized access, exploitation, or service-key usage.
 - Do not probe `AbdlMatch.com` or other partner infrastructure.
 - Do not collect/preserve material if the §2 legality gate is not met.
-- Do not rewrite git history or hand-edit tracked evidence.
-- Do not "help" beyond lawful, read-only, low-profile collection and packaging.
+- Do not hand-edit tracked evidence; re-snapshot instead. (History was rewritten
+  once, only to set the `J <j@jas.run>` identity, per the client.)
+- Do not "help" beyond lawful collection and packaging.

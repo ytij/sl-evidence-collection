@@ -12,6 +12,7 @@ REFERENCED = [
     "capture.py",
     "archive.py",
     "preserve_media.py",
+    "availability.py",
     "osint_recon.py",
     "osint/public_exposure.py",
     "takedown.py",
@@ -33,6 +34,7 @@ REFERENCED = [
     "takedowns/takedown_index.csv",
     "captures/archive.json",
     "captures/media_manifest.json",
+    "evidence/availability/NOTES.md",
     "captures/20261009T050349Z/manifest.json",
     "evidence/manifest.json",
 ]

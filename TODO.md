@@ -6,6 +6,18 @@ damages, and drive automated takedowns through counsel.
 
 **Navigate:** [`README`](README.md) · [`REPO_MAP`](REPO_MAP.md) · [`HANDOVER`](HANDOVER.md) · [`legal/`](legal/) · [`osint/`](osint/) · [`THUMBNAIL_PRESERVATION`](THUMBNAIL_PRESERVATION.md)
 
+## Current state (2026-10-10)
+- **Preserved:** full HLS media for all 14 live works (bytes in gitignored
+  `staging/media/`, hashes committed), 608/610 orphan thumbnails, page captures,
+  12 backend tables — all hashed + RFC 3161 timestamped.
+- **Availability audit** (`availability.py` → `evidence/availability/`): the 14
+  works are **still up (HTTP 200)**; the operator has **not** removed them. (An
+  earlier "all down" reading was a tool bug — see `evidence/availability/NOTES.md`.)
+- **Remote:** `origin = git@github.com:ytij/sl-evidence-collection.git`; pushed as `J <j@jas.run>`.
+- **`int` branch** (unpushed): authorized security-validation engagement scaffold,
+  on hold pending signed scope.
+- **Media bytes are gitignored — back them up out of the repo.**
+
 > **Gate (counsel to confirm):** the work is plain adult age-play between
 > consenting adults, with **no depiction of a minor (real or simulated)**.
 > Everything below assumes that. If that changes, stop and route to law

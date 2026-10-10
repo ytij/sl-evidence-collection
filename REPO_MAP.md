@@ -76,6 +76,7 @@ Links are relative to the repo root. Generated/derived files are marked ⟳.
 | [`osint/public_exposure.json`](osint/public_exposure.json) ⟳ | Structured version of the above. |
 | [`osint/public_exposure.py`](osint/public_exposure.py) | Generator for the exposure report. |
 | [`osint/SUBPOENA_TARGETS.md`](osint/SUBPOENA_TARGETS.md) | Who to subpoena, what to ask, by what mechanism. |
+| [`osint/raw/abdlhub_homepage.html`](osint/raw/abdlhub_homepage.html) | Saved homepage source (inline JS/config). |
 
 ## 6. `captures/` — rendered pages, archive, thumbnails
 | File | What it is |
